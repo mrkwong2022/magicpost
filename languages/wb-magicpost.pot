@@ -1,0 +1,2057 @@
+# Copyright (C) 2025 wb-magicpost
+# This file is distributed under the same license as the wb-magicpost package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wb-magicpost\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-07 09:10+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/action_dialog.php:10
+msgctxt "admin"
+msgid "设置标签"
+msgstr ""
+
+#: inc/action_dialog.php:11
+msgctxt "admin"
+msgid "设置属性"
+msgstr ""
+
+#: inc/action_dialog.php:12
+msgctxt "admin"
+msgid "标签及内容"
+msgstr ""
+
+#: inc/action_dialog.php:13
+msgctxt "admin"
+msgid "格式优化"
+msgstr ""
+
+#: inc/action_dialog.php:14
+msgctxt "admin"
+msgid "搜索替换"
+msgstr ""
+
+#: inc/action_dialog.php:20
+msgid "常用标签"
+msgstr ""
+
+#: inc/action_dialog.php:20
+msgid "表格标签"
+msgstr ""
+
+#: inc/action_dialog.php:20
+msgid "列表标签"
+msgstr ""
+
+#: inc/action_dialog.php:20
+msgid "其他标签"
+msgstr ""
+
+#: inc/action_dialog.php:33, inc/action_dialog.php:57, inc/action_dialog.php:74
+msgctxt "admin"
+msgid "自定义"
+msgstr ""
+
+#: inc/action_dialog.php:47
+msgctxt "admin"
+msgid "常用属性"
+msgstr ""
+
+#: inc/action_dialog.php:71
+msgctxt "admin"
+msgid "标签及内容删除"
+msgstr ""
+
+#: inc/action_dialog.php:105
+msgctxt "admin"
+msgid "替换"
+msgstr ""
+
+#: inc/action_dialog.php:109
+msgctxt "admin"
+msgid "启用"
+msgstr ""
+
+#: inc/action_dialog.php:118
+msgctxt "admin"
+msgid "设置界面"
+msgstr ""
+
+#: inc/action_dialog.php:119
+msgctxt "admin, %s设置界面"
+msgid "温馨提示：此处设置仅作用于当前文章编辑，如需设置插件默认项，需进入插件%s操作。"
+msgstr ""
+
+#: inc/download.php:15
+msgctxt "front"
+msgid "相关文件下载地址"
+msgstr ""
+
+#: inc/download.php:33
+msgid "发表评论"
+msgstr ""
+
+#: inc/download.php:35
+msgctxt "front, %s发表评论link"
+msgid "该资源需回复评论后下载，马上去%s"
+msgstr ""
+
+#: inc/download.php:28
+msgid "登录"
+msgstr ""
+
+#: inc/download.php:30
+msgctxt "front, %s登录link"
+msgid "该资源需登录后下载，去%s"
+msgstr ""
+
+#: inc/download.php:56
+msgid "&copy;下载资源版权归作者所有；本站所有资源均来源于网络，仅供学习使用，请支持正版！"
+msgstr ""
+
+#: inc/download_btn.php:25, inc/download_btn.php:13, inc/sticky.php:21
+msgctxt "front"
+msgid "去下载"
+msgstr ""
+
+#: inc/download_btn.php:17
+msgctxt "front"
+msgid "* 该资源需回复评论后下载, "
+msgstr ""
+
+#: inc/download_btn.php:17
+msgctxt "front"
+msgid "去评论"
+msgstr ""
+
+#: inc/meta_box.php:23
+msgctxt "metabox, 开关"
+msgid "下载功能"
+msgstr ""
+
+#: inc/meta_box.php:28
+msgctxt "metabox"
+msgid "文件上传方式"
+msgstr ""
+
+#: inc/meta_box.php:51
+msgid "填入百度网盘客户端或者网页端分享链接及提取码，可自动识别链接和提取码填入哦。"
+msgstr ""
+
+#: inc/meta_box.php:59, inc/meta_box.php:77
+msgctxt "metabox"
+msgid "提取码"
+msgstr ""
+
+#: inc/meta_box.php:44
+msgctxt "metabox"
+msgid "上传"
+msgstr ""
+
+#: inc/meta_box.php:86
+msgctxt "metabox"
+msgid "下载方式"
+msgstr ""
+
+#: inc/meta_box.php:89
+msgctxt "metabox"
+msgid "选择方式"
+msgstr ""
+
+#: inc/meta_box.php:91
+msgctxt "metabox"
+msgid "免费下载"
+msgstr ""
+
+#: inc/meta_box.php:92
+msgctxt "metabox"
+msgid "回复后下载"
+msgstr ""
+
+#: inc/meta_box.php:93
+msgctxt "metabox"
+msgid "付费下载"
+msgstr ""
+
+#: inc/meta_box.php:113
+msgctxt "metabox"
+msgid "设置价格: "
+msgstr ""
+
+#: inc/meta_box.php:116
+msgctxt "metabox"
+msgid "* 当前文章启用了付费下载，付费阅读功能失效。"
+msgstr ""
+
+#: inc/meta_box.php:99
+msgctxt "metabox"
+msgid "付费下载需安装\"Wordpress付费内容插件\"，"
+msgstr ""
+
+#: inc/meta_box.php:105
+msgctxt "metabox"
+msgid "未检测到该插件启用，"
+msgstr ""
+
+#: inc/meta_box.php:106
+msgctxt "metabox"
+msgid "立即启用"
+msgstr ""
+
+#: inc/meta_box.php:102
+msgctxt "metabox"
+msgid "未检测到该插件，"
+msgstr ""
+
+#: inc/meta_box.php:103
+msgctxt "metabox"
+msgid "立即下载"
+msgstr ""
+
+#: inc/tabbar-post.php:13
+msgctxt "tabbar label"
+msgid "微海报"
+msgstr ""
+
+#: inc/tabbar-post.php:20
+msgctxt "tabbar label"
+msgid "分享"
+msgstr ""
+
+#: inc/tabbar-post.php:29
+msgctxt "tabbar label"
+msgid "目录"
+msgstr ""
+
+#: inc/tabbar-post.php:80
+msgctxt "标题"
+msgid "内容目录"
+msgstr ""
+
+#: inc/widget_download.php:11
+msgctxt "widget"
+msgid "下载"
+msgstr ""
+
+#: inc/widget_download.php:18
+msgctxt "widget, %s下载次数"
+msgid "已下载%s次"
+msgstr ""
+
+#: module/baidu.api.php:53
+msgctxt "log"
+msgid "BaiduAPI获取token失败。错误信息:"
+msgstr ""
+
+#: module/baidu.api.php:59
+msgctxt "log"
+msgid "BaiduAPI获取token失败。响应为空"
+msgstr ""
+
+#: module/baidu.api.php:65
+msgctxt "log"
+msgid "BaiduAPI获取token失败。Err:"
+msgstr ""
+
+#: module/baidu.api.php:77
+msgctxt "log"
+msgid "文档查询:"
+msgstr ""
+
+#: module/baidu.api.php:97
+msgctxt "log"
+msgid "百度文档翻译查询结果失败。错误信息:"
+msgstr ""
+
+#: module/baidu.api.php:104
+msgctxt "log"
+msgid "百度文档翻译查询失败。响应为空"
+msgstr ""
+
+#: module/baidu.api.php:112
+msgctxt "log"
+msgid "百度文档翻译查询失败。响应解析错误"
+msgstr ""
+
+#: module/baidu.api.php:116
+msgctxt "log"
+msgid "百度文档翻译查询错误,"
+msgstr ""
+
+#: module/baidu.api.php:153
+msgctxt "log"
+msgid "百度文档翻译提交文档失败。错误信息:"
+msgstr ""
+
+#: module/baidu.api.php:160
+msgctxt "log"
+msgid "百度文档翻译失败。响应为空"
+msgstr ""
+
+#: module/baidu.api.php:168
+msgctxt "log"
+msgid "百度文档翻译失败。响应解析错误"
+msgstr ""
+
+#: module/baidu.api.php:172
+msgctxt "log"
+msgid "百度文档翻译错误,"
+msgstr ""
+
+#: module/clean.php:25
+msgctxt "admin"
+msgid "段落开头空格删除"
+msgstr ""
+
+#: module/clean.php:26
+msgctxt "admin"
+msgid "段落之间自动空行"
+msgstr ""
+
+#: module/clean.php:27
+msgctxt "admin"
+msgid "图像之间自动空行"
+msgstr ""
+
+#: module/clean.php:28
+msgctxt "admin"
+msgid "图像与段落间自动空行"
+msgstr ""
+
+#: module/clean.php:29
+msgctxt "admin"
+msgid "H标题与段落间自动空行"
+msgstr ""
+
+#: module/clean.php:236
+msgctxt "admin, btn"
+msgid "清除代码"
+msgstr ""
+
+#: module/deepl.api.php:55
+msgctxt "log"
+msgid "DeepL翻译API请求失败。错误信息:"
+msgstr ""
+
+#: module/deepl.api.php:67
+msgctxt "log"
+msgid "DeepL翻译失败。状态码："
+msgstr ""
+
+#: module/deepl.api.php:74
+msgctxt "log"
+msgid "DeepL翻译失败。响应为空"
+msgstr ""
+
+#: module/deepl.api.php:81
+msgctxt "log"
+msgid "DeepL翻译失败。响应解析错误"
+msgstr ""
+
+#: module/download.php:242
+msgctxt "dl_type"
+msgid "百度网盘"
+msgstr ""
+
+#: module/download.php:234
+msgctxt "dl_type"
+msgid "直接下载"
+msgstr ""
+
+#: module/download.php:275
+msgctxt "front"
+msgid "该资源需支付后下载，当前出了点小问题，请稍后再试或联系站长。"
+msgstr ""
+
+#: module/download.php:279
+msgctxt "front"
+msgid "此资源需支付%price%后下载"
+msgstr ""
+
+#: module/download.php:403
+msgctxt "front"
+msgid "下载方式已过期，请与站长联系"
+msgstr ""
+
+#: module/download.php:423
+msgctxt "front"
+msgid "#下载信息#"
+msgstr ""
+
+#: module/download.php:423
+msgctxt "front"
+msgid "侧栏展示下载信息，可选"
+msgstr ""
+
+#: module/download.php:513
+msgctxt "admin, metabox"
+msgid "下载设置"
+msgstr ""
+
+#: module/download.php:752
+msgctxt "front"
+msgid "百度网盘"
+msgstr ""
+
+#: module/download.php:742
+msgctxt "front"
+msgid "直接下载"
+msgstr ""
+
+#: module/google.api.php:49, module/google.api.php:118
+msgctxt "log"
+msgid "Google翻译失败。错误信息:"
+msgstr ""
+
+#: module/google.api.php:57
+msgctxt "log"
+msgid "Google翻译失败。HTTP CODE :"
+msgstr ""
+
+#: module/google.api.php:65
+msgctxt "log"
+msgid "Google翻译失败。Parse result fail"
+msgstr ""
+
+#: module/google.api.php:125
+msgctxt "log"
+msgid "Google翻译失败。响应为空"
+msgstr ""
+
+#: module/google.api.php:139
+msgctxt "log"
+msgid "Google翻译失败。数据解析为空"
+msgstr ""
+
+#: module/google.api.php:143
+msgctxt "log"
+msgid "Google翻译失败,原因:"
+msgstr ""
+
+#: module/magicpost.php:20, module/magicpost.php:21
+msgid "MagicPost"
+msgstr ""
+
+#: module/magicpost.php:22, module/magicpost.php:23
+msgid "闪电博"
+msgstr ""
+
+#: module/magicpost.php:24
+msgid "MagicPost（中文为魔法文章），如其名，该插件的主要目的是为WordPress的文章管理赋予更多高效，增强的功能。如定时发布管理，文章搬家，文章翻译，HTML代码清洗，下载文件管理和社交分享小组件。"
+msgstr ""
+
+#: module/magicpost.php:25
+msgid "https://www.wbolt.com/"
+msgstr ""
+
+#: module/magicpost.php:64
+msgid "发布时间变更为当前时间"
+msgstr ""
+
+#: module/magicpost.php:233, module/magicpost.php:238
+msgctxt "log"
+msgid "校验失败，请稍后再试（错误代码001["
+msgstr ""
+
+#: module/magicpost.php:245
+msgctxt "log"
+msgid "发生异常错误，联系<a href=\"https://www.wbolt.com/?wb=member#/contact\" target=\"_blank\">技术支持</a>（错误代码 010）"
+msgstr ""
+
+#: module/magicpost.php:252
+msgctxt "log"
+msgid "发生异常错误，联系<a href=\"https://www.wbolt.com/?wb=member#/contact\" target=\"_blank\">技术支持</a>（错误代码011）"
+msgstr ""
+
+#: module/magicpost.php:256
+msgctxt "log"
+msgid "校验失败，请稍后再试（错误代码004)"
+msgstr ""
+
+#: module/magicpost.php:266
+msgctxt "log"
+msgid "插件配置参数错误，联系<a href=\"https://www.wbolt.com/?wb=member#/contact\" target=\"_blank\">技术支持</a>（错误代码"
+msgstr ""
+
+#: module/magicpost.php:269
+msgctxt "log"
+msgid "输入key无效，请输入正确key（错误代码200）"
+msgstr ""
+
+#: module/magicpost.php:272
+msgctxt "log"
+msgid "key使用次数超出限制范围（错误代码201）"
+msgstr ""
+
+#: module/magicpost.php:277
+msgctxt "log"
+msgid "校验服务器异常，联系<a href=\"https://www.wbolt.com/?wb=member#/contact\" target=\"_blank\">技术支持</a>（错误代码"
+msgstr ""
+
+#: module/magicpost.php:280
+msgctxt "log"
+msgid "发生异常错误，联系<a href=\"https://www.wbolt.com/?wb=member#/contact\" target=\"_blank\">技术支持</a>（错误代码"
+msgstr ""
+
+#: module/magicpost.php:427, module/magicpost.php:427
+msgctxt "admin, menu"
+msgid "定时发布"
+msgstr ""
+
+#: module/magicpost.php:428, module/magicpost.php:428
+msgctxt "admin, menu"
+msgid "文章搬家"
+msgstr ""
+
+#: module/magicpost.php:429, module/magicpost.php:429
+msgctxt "admin, menu"
+msgid "文章翻译"
+msgstr ""
+
+#: module/magicpost.php:430, module/magicpost.php:430
+msgctxt "admin, menu"
+msgid "HTML清理"
+msgstr ""
+
+#: module/magicpost.php:431, module/magicpost.php:431
+msgctxt "admin, menu"
+msgid "下载管理"
+msgstr ""
+
+#: module/magicpost.php:432, module/magicpost.php:432
+msgctxt "admin, menu"
+msgid "社交分享"
+msgstr ""
+
+#: module/magicpost.php:433, module/magicpost.php:433
+msgctxt "admin, menu"
+msgid "内容目录"
+msgstr ""
+
+#: module/magicpost.php:434, module/magicpost.php:434
+msgctxt "admin, menu"
+msgid "编辑增强"
+msgstr ""
+
+#: module/magicpost.php:435, module/magicpost.php:435
+msgctxt "admin, menu"
+msgid "插件设置"
+msgstr ""
+
+#: module/magicpost.php:442, module/magicpost.php:442
+msgctxt "admin, menu"
+msgid "升至Pro版"
+msgstr ""
+
+#: module/magicpost.php:476
+msgctxt "产品名称"
+msgid "MagicPost"
+msgstr ""
+
+#: module/magicpost.php:505
+msgctxt "admin, link"
+msgid "插件主页"
+msgstr ""
+
+#: module/magicpost.php:506
+msgctxt "admin, link"
+msgid "说明文档"
+msgstr ""
+
+#: module/magicpost.php:507
+msgctxt "admin, link"
+msgid "反馈"
+msgstr ""
+
+#: module/magicpost.php:540
+msgid "有新版本可用。"
+msgstr ""
+
+#: module/magicpost.php:541
+msgctxt "%s产品名"
+msgid "查看 %s 版本"
+msgstr ""
+
+#: module/magicpost.php:541
+msgid "查看版本 %s 详情"
+msgstr ""
+
+#: module/magicpost.php:542
+msgctxt "or"
+msgid "或"
+msgstr ""
+
+#: module/magicpost.php:542
+msgctxt "%s产品名"
+msgid "现在更新%s"
+msgstr ""
+
+#: module/magicpost.php:542
+msgctxt "link"
+msgid "现在更新"
+msgstr ""
+
+#: module/magicpost.php:553
+msgctxt "admin, link"
+msgid "升至Pro版"
+msgstr ""
+
+#: module/magicpost.php:556
+msgctxt "admin, link"
+msgid "设置"
+msgstr ""
+
+#: module/move.php:92, module/move.php:419, module/schedule.php:236
+msgctxt "post type"
+msgid "文章"
+msgstr ""
+
+#: module/move.php:347
+msgctxt "log"
+msgid "参数不能为空"
+msgstr ""
+
+#: module/schedule.php:53
+msgctxt "bulk action"
+msgid "加入定时发布"
+msgstr ""
+
+#: module/schedule.php:183
+msgctxt "post status"
+msgid "计划"
+msgstr ""
+
+#: module/schedule.php:204
+msgctxt "post status"
+msgid "未计划"
+msgstr ""
+
+#: module/schedule.php:202
+msgctxt "post status"
+msgid "已定时: "
+msgstr ""
+
+#: module/schedule.php:236
+msgctxt "post type"
+msgid "页面"
+msgstr ""
+
+#: module/schedule.php:237
+msgctxt "post status"
+msgid "草稿"
+msgstr ""
+
+#: module/schedule.php:237
+msgctxt "post status"
+msgid "待审"
+msgstr ""
+
+#: module/schedule.php:238
+msgctxt "post status"
+msgid "自动添加至定时发布"
+msgstr ""
+
+#: module/schedule.php:238
+msgctxt "post status"
+msgid "手动添加至定时发布"
+msgstr ""
+
+#: module/schedule.php:240
+msgctxt "week"
+msgid "周一"
+msgstr ""
+
+#: module/schedule.php:241
+msgctxt "week"
+msgid "周二"
+msgstr ""
+
+#: module/schedule.php:242
+msgctxt "week"
+msgid "周三"
+msgstr ""
+
+#: module/schedule.php:243
+msgctxt "week"
+msgid "周四"
+msgstr ""
+
+#: module/schedule.php:244
+msgctxt "week"
+msgid "周五"
+msgstr ""
+
+#: module/schedule.php:245
+msgctxt "week"
+msgid "周六"
+msgstr ""
+
+#: module/schedule.php:246
+msgctxt "week"
+msgid "周日"
+msgstr ""
+
+#: module/schedule.php:249
+msgctxt "week"
+msgid "周一 ~ 周日"
+msgstr ""
+
+#: module/schedule.php:315
+msgctxt "ajax desc"
+msgid "没有需要定时处理的文章。"
+msgstr ""
+
+#: module/schedule.php:310
+msgctxt "ajax desc"
+msgid "提交成功"
+msgstr ""
+
+#: module/schedule.php:312
+msgctxt "ajax desc"
+msgid "成功定时处理%d篇文章。其中%d篇不符合定时设置"
+msgstr ""
+
+#: module/share.php:252, module/share.php:429
+msgid "[原文链接]"
+msgstr ""
+
+#: module/share.php:587
+msgctxt "点赞按钮label，已有点赞显示数量"
+msgid "点赞(%s)"
+msgid_plural "点赞(%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: module/share.php:588
+msgctxt "点赞按钮label，未有点赞不显示数量"
+msgid "点赞"
+msgstr ""
+
+#: module/toc.php:168, module/toc.php:331
+msgid "内容目录"
+msgstr ""
+
+#: module/toc.php:203
+msgctxt "widget"
+msgid "#Magicpost 内容目录#"
+msgstr ""
+
+#: module/toc.php:203
+msgctxt "widget"
+msgid "侧栏展示内容目录"
+msgstr ""
+
+#: module/translate.php:67
+msgid "翻译状态"
+msgstr ""
+
+#: module/translate.php:107
+msgid "查询翻译"
+msgstr ""
+
+#: module/translate.php:115
+msgid "翻译"
+msgstr ""
+
+#: module/translate.php:145
+msgid "批量翻译"
+msgstr ""
+
+#: module/translate.php:235, module/translate.php:494
+msgid "文章：%s 翻译失败，错误：%s"
+msgstr ""
+
+#: module/translate.php:252
+msgid "翻译不可用"
+msgstr ""
+
+#: module/translate.php:357
+msgid "文章：%s 百度获取文档翻译失败，错误：%s"
+msgstr ""
+
+#: module/translate.php:362
+msgid "文章：%s 百度获取文档翻译失败，data 为空"
+msgstr ""
+
+#: module/translate.php:367
+msgid "文章：%s 百度获取文档翻译失败，%s"
+msgstr ""
+
+#: module/translate.php:378
+msgid "获取翻译结果出错，%s"
+msgstr ""
+
+#: module/translate.php:401, module/translate.php:510
+msgid "翻译成功"
+msgstr ""
+
+#: module/translate.php:404
+msgid "待翻译"
+msgstr ""
+
+#: module/translate.php:404
+msgid "翻译中"
+msgstr ""
+
+#: module/translate.php:404, module/translate.php:462, module/translate.php:470, module/translate.php:504
+msgid "翻译失败"
+msgstr ""
+
+#: module/translate.php:508
+msgid "文档翻译提交成功"
+msgstr ""
+
+#: module/localize/_localize_admin_js.php:4
+msgctxt "js部分"
+msgid "本次优化参数设置"
+msgstr ""
+
+#: module/localize/_localize_admin_js.php:5
+msgctxt "js部分"
+msgid "执行优化"
+msgstr ""
+
+#: module/localize/_localize_admin_js.php:6
+msgctxt "js部分"
+msgid "Magicpost: 未能识别内容"
+msgstr ""
+
+#: module/localize/_localize_admin_js.php:7
+msgctxt "js部分"
+msgid "清除成功"
+msgstr ""
+
+#: module/localize/_localize_admin_js.php:8
+msgctxt "js部分"
+msgid "Magicpost: 未能识别编辑器"
+msgstr ""
+
+#: module/localize/_localize_be.php:7
+msgctxt "vue部分"
+msgid "设置保存成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:8
+msgctxt "vue部分"
+msgid "内容清理"
+msgstr ""
+
+#: module/localize/_localize_be.php:9
+msgctxt "vue部分"
+msgid "清理文章中的无用内容，包括标签、属性、内容等。"
+msgstr ""
+
+#: module/localize/_localize_be.php:10
+msgctxt "vue部分"
+msgid "功能开启"
+msgstr ""
+
+#: module/localize/_localize_be.php:11
+msgctxt "vue部分"
+msgid "功能关闭"
+msgstr ""
+
+#: module/localize/_localize_be.php:12
+msgctxt "vue部分"
+msgid "古腾堡"
+msgstr ""
+
+#: module/localize/_localize_be.php:13
+msgctxt "vue部分"
+msgid "支持开启古腾堡"
+msgstr ""
+
+#: module/localize/_localize_be.php:14
+msgctxt "vue部分"
+msgid "插件已强制关闭古腾堡"
+msgstr ""
+
+#: module/localize/_localize_be.php:15
+msgctxt "vue部分"
+msgid "* 当前功能在古腾堡编辑器下无效。需要使用当前功能，请关闭古腾堡编辑器。"
+msgstr ""
+
+#: module/localize/_localize_be.php:16
+msgctxt "vue部分"
+msgid "标签删除"
+msgstr ""
+
+#: module/localize/_localize_be.php:17
+msgctxt "vue部分"
+msgid "常见标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:18
+msgctxt "vue部分"
+msgid "表格标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:19
+msgctxt "vue部分"
+msgid "列表标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:20
+msgctxt "vue部分"
+msgid "其他标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:21
+msgctxt "vue部分"
+msgid "自定义"
+msgstr ""
+
+#: module/localize/_localize_be.php:22
+msgctxt "vue部分"
+msgid "* 无需输入&lt;&gt; &lt;/&gt;，输入标签名称即可，多个标签以空格或回车键分隔。"
+msgstr ""
+
+#: module/localize/_localize_be.php:23
+msgctxt "vue部分"
+msgid "标签属性删除"
+msgstr ""
+
+#: module/localize/_localize_be.php:24
+msgctxt "vue部分"
+msgid "常见标签属性"
+msgstr ""
+
+#: module/localize/_localize_be.php:25
+msgctxt "vue部分"
+msgid "多个标签属性以空格或者回车键分隔"
+msgstr ""
+
+#: module/localize/_localize_be.php:26
+msgctxt "vue部分"
+msgid "标签及内容删除"
+msgstr ""
+
+#: module/localize/_localize_be.php:27
+msgctxt "vue部分"
+msgid "* 无需输入&lt;&gt; &amp; &lt;/&gt;，输入标签名称即可，多个标签以空格或回车键分隔"
+msgstr ""
+
+#: module/localize/_localize_be.php:28
+msgctxt "vue部分"
+msgid "优化选项"
+msgstr ""
+
+#: module/localize/_localize_be.php:29
+msgctxt "vue部分"
+msgid "设置选项"
+msgstr ""
+
+#: module/localize/_localize_be.php:30
+msgctxt "vue部分"
+msgid "搜索替换"
+msgstr ""
+
+#: module/localize/_localize_be.php:31
+msgctxt "vue部分"
+msgid "设置替换项目"
+msgstr ""
+
+#: module/localize/_localize_be.php:32
+msgctxt "vue部分"
+msgid "替换"
+msgstr ""
+
+#: module/localize/_localize_be.php:33
+msgctxt "vue部分"
+msgid "搜索内容"
+msgstr ""
+
+#: module/localize/_localize_be.php:34
+msgctxt "vue部分"
+msgid "替换内容"
+msgstr ""
+
+#: module/localize/_localize_be.php:35
+msgctxt "vue部分"
+msgid "增加"
+msgstr ""
+
+#: module/localize/_localize_be.php:36
+msgctxt "vue部分"
+msgid "搜索替换支持正则表达式，参考如下："
+msgstr ""
+
+#: module/localize/_localize_be.php:37
+msgctxt "vue部分"
+msgid "（1）使用*代表任意查找字符，括号(匹配内容)可在替换内容用$1引用。搜索填写 <div class=\"post-title\">(*)</div> 替换填写 <h1>$1</h1>"
+msgstr ""
+
+#: module/localize/_localize_be.php:38
+msgctxt "vue部分"
+msgid "（2）&lt;h4&gt; 替换 &lt;strong&gt;；则搜索填写 &lt;(/?)h4 替换填写 &lt;$1strong"
+msgstr ""
+
+#: module/localize/_localize_be.php:40
+msgctxt "vue部分"
+msgid ""
+"（3）wp-content/uploads/年/月/ 替换 wp-content/uploads/年-月/ 搜索填写\n"
+"                          wp-content/uploads/(\d{4})/(\d{2})/ 替换填写 wp-content/uploads/$1-$2/"
+msgstr ""
+
+#: module/localize/_localize_be.php:42
+msgctxt "vue部分"
+msgid "设置保存失败"
+msgstr ""
+
+#: module/localize/_localize_be.php:43
+msgctxt "vue部分"
+msgid "确认删除？"
+msgstr ""
+
+#: module/localize/_localize_be.php:44
+msgctxt "vue部分"
+msgid "提示"
+msgstr ""
+
+#: module/localize/_localize_be.php:45
+msgctxt "vue部分"
+msgid "请填写自定义下载方式名称"
+msgstr ""
+
+#: module/localize/_localize_be.php:46
+msgctxt "vue部分"
+msgid "名称"
+msgstr ""
+
+#: module/localize/_localize_be.php:47
+msgctxt "vue部分"
+msgid "英文标识"
+msgstr ""
+
+#: module/localize/_localize_be.php:48
+msgctxt "vue部分"
+msgid "添加"
+msgstr ""
+
+#: module/localize/_localize_be.php:49
+msgctxt "vue部分"
+msgid "获取PRO版本即可配置更多下载方式。"
+msgstr ""
+
+#: module/localize/_localize_be.php:50
+msgctxt "vue部分"
+msgid "激活PRO版"
+msgstr ""
+
+#: module/localize/_localize_be.php:51
+msgctxt "vue部分"
+msgid "编辑增强"
+msgstr ""
+
+#: module/localize/_localize_be.php:52
+msgctxt "vue部分"
+msgid "通过发布时间选项、克隆、自动Slug等实用功能，来提升内容发布效率。"
+msgstr ""
+
+#: module/localize/_localize_be.php:53
+msgctxt "vue部分"
+msgid "获取PRO版本"
+msgstr ""
+
+#: module/localize/_localize_be.php:54
+msgctxt "vue部分"
+msgid "激活PRO版本即可使用"
+msgstr ""
+
+#: module/localize/_localize_be.php:55
+msgctxt "vue部分"
+msgid "保存成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:56
+msgctxt "vue部分"
+msgid "数据加载失败"
+msgstr ""
+
+#: module/localize/_localize_be.php:57
+msgctxt "vue部分"
+msgid "设置"
+msgstr ""
+
+#: module/localize/_localize_be.php:58
+msgctxt "vue部分"
+msgid "已发布"
+msgstr ""
+
+#: module/localize/_localize_be.php:59
+msgctxt "vue部分"
+msgid "草稿"
+msgstr ""
+
+#: module/localize/_localize_be.php:60
+msgctxt "vue部分"
+msgid "待审核"
+msgstr ""
+
+#: module/localize/_localize_be.php:61
+msgctxt "vue部分"
+msgid "计划"
+msgstr ""
+
+#: module/localize/_localize_be.php:62
+msgctxt "vue部分"
+msgid "该功能需要激活PRO版本"
+msgstr ""
+
+#: module/localize/_localize_be.php:63
+msgctxt "vue部分"
+msgid "去激活"
+msgstr ""
+
+#: module/localize/_localize_be.php:64
+msgctxt "vue部分"
+msgid "请选择文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:65
+msgctxt "vue部分"
+msgid "请选择目标分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:66
+msgctxt "vue部分"
+msgid "确认执行如下动作?"
+msgstr ""
+
+#: module/localize/_localize_be.php:67
+msgctxt "vue部分"
+msgid "确定"
+msgstr ""
+
+#: module/localize/_localize_be.php:68
+msgctxt "vue部分"
+msgid "取消"
+msgstr ""
+
+#: module/localize/_localize_be.php:69
+msgctxt "vue部分"
+msgid "设置成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:70
+msgctxt "vue部分"
+msgid "原分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:71
+msgctxt "vue部分"
+msgid "文章类型"
+msgstr ""
+
+#: module/localize/_localize_be.php:72
+msgctxt "vue部分"
+msgid "文章状态"
+msgstr ""
+
+#: module/localize/_localize_be.php:73
+msgctxt "vue部分"
+msgid "文章分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:74
+msgctxt "vue部分"
+msgid "包含范围"
+msgstr ""
+
+#: module/localize/_localize_be.php:75
+msgctxt "vue部分"
+msgid "仅当前分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:76
+msgctxt "vue部分"
+msgid "含子分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:77
+msgctxt "vue部分"
+msgid "请输入内容"
+msgstr ""
+
+#: module/localize/_localize_be.php:78
+msgctxt "vue部分"
+msgid "搜索"
+msgstr ""
+
+#: module/localize/_localize_be.php:79
+msgctxt "vue部分"
+msgid "文章名称"
+msgstr ""
+
+#: module/localize/_localize_be.php:80
+msgctxt "vue部分"
+msgid "分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:81
+msgctxt "vue部分"
+msgid "发布日期"
+msgstr ""
+
+#: module/localize/_localize_be.php:82
+msgctxt "vue部分"
+msgid "批量选择"
+msgstr ""
+
+#: module/localize/_localize_be.php:83
+msgctxt "vue部分"
+msgid "清除选中"
+msgstr ""
+
+#: module/localize/_localize_be.php:84
+msgctxt "vue部分"
+msgid "选中当前页项"
+msgstr ""
+
+#: module/localize/_localize_be.php:85
+msgctxt "vue部分"
+msgid "选中所有结果项"
+msgstr ""
+
+#: module/localize/_localize_be.php:86
+msgctxt "vue部分"
+msgid "目标分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:87
+msgctxt "vue部分"
+msgid "文章数"
+msgstr ""
+
+#: module/localize/_localize_be.php:88
+msgctxt "vue部分"
+msgid "重置文章分类为目标分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:89
+msgctxt "vue部分"
+msgid "添加目标分类至文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:90
+msgctxt "vue部分"
+msgid "将文章从目标分类移出"
+msgstr ""
+
+#: module/localize/_localize_be.php:91
+msgctxt "vue部分"
+msgid "名称不能为空"
+msgstr ""
+
+#: module/localize/_localize_be.php:92
+msgctxt "vue部分"
+msgid "确认添加标签？"
+msgstr ""
+
+#: module/localize/_localize_be.php:93
+msgctxt "vue部分"
+msgid "添加出错了，"
+msgstr ""
+
+#: module/localize/_localize_be.php:94
+msgctxt "vue部分"
+msgid "添加成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:95
+msgctxt "vue部分"
+msgid "别名不能为空"
+msgstr ""
+
+#: module/localize/_localize_be.php:96
+msgctxt "vue部分"
+msgid "确认更新标签？"
+msgstr ""
+
+#: module/localize/_localize_be.php:97
+msgctxt "vue部分"
+msgid "更新出错了，"
+msgstr ""
+
+#: module/localize/_localize_be.php:98
+msgctxt "vue部分"
+msgid "更新成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:99
+msgctxt "vue部分"
+msgid "确认删除标签 "
+msgstr ""
+
+#: module/localize/_localize_be.php:100
+msgctxt "vue部分"
+msgid "删除成功"
+msgstr ""
+
+#: module/localize/_localize_be.php:101
+msgctxt "vue部分"
+msgid "未选择文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:102
+msgctxt "vue部分"
+msgid "未选择目标标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:103
+msgctxt "vue部分"
+msgid "确认"
+msgstr ""
+
+#: module/localize/_localize_be.php:104
+msgctxt "vue部分"
+msgid "原标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:105
+msgctxt "vue部分"
+msgid "标签名称或别名"
+msgstr ""
+
+#: module/localize/_localize_be.php:106
+msgctxt "vue部分"
+msgid "请输入文章标题"
+msgstr ""
+
+#: module/localize/_localize_be.php:107
+msgctxt "vue部分"
+msgid "文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:108
+msgctxt "vue部分"
+msgid "标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:109
+msgctxt "vue部分"
+msgid "目标标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:110
+msgctxt "vue部分"
+msgid "请输入标签名称、别名"
+msgstr ""
+
+#: module/localize/_localize_be.php:111
+msgctxt "vue部分"
+msgid "添加标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:112
+msgctxt "vue部分"
+msgid "移除文章中的目标标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:113
+msgctxt "vue部分"
+msgid "新增目标标签至文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:114
+msgctxt "vue部分"
+msgid "编辑标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:115
+msgctxt "vue部分"
+msgid "请输入名称"
+msgstr ""
+
+#: module/localize/_localize_be.php:116
+msgctxt "vue部分"
+msgid "别名"
+msgstr ""
+
+#: module/localize/_localize_be.php:117
+msgctxt "vue部分"
+msgid "请输入别名"
+msgstr ""
+
+#: module/localize/_localize_be.php:118
+msgctxt "vue部分"
+msgid "新增标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:119
+msgctxt "vue部分"
+msgid "取 消"
+msgstr ""
+
+#: module/localize/_localize_be.php:120
+msgctxt "vue部分"
+msgid "确 定"
+msgstr ""
+
+#: module/localize/_localize_be.php:121
+msgctxt "vue部分"
+msgid "功能对比"
+msgstr ""
+
+#: module/localize/_localize_be.php:122
+msgctxt "vue部分"
+msgid "免费版"
+msgstr ""
+
+#: module/localize/_localize_be.php:123
+msgctxt "vue部分"
+msgid "专业版"
+msgstr ""
+
+#: module/localize/_localize_be.php:124
+msgctxt "vue部分"
+msgid "立即激活"
+msgstr ""
+
+#: module/localize/_localize_be.php:125
+msgctxt "vue部分"
+msgid "已激活"
+msgstr ""
+
+#: module/localize/_localize_be.php:126
+msgctxt "vue部分"
+msgid "定时发布"
+msgstr ""
+
+#: module/localize/_localize_be.php:127
+msgctxt "vue部分"
+msgid "基于WordPress内置的定时发布，实现可自定义规则的手动或者自动定时发布任务编排。"
+msgstr ""
+
+#: module/localize/_localize_be.php:128
+msgctxt "vue部分"
+msgid "仅PRO版本可用"
+msgstr ""
+
+#: module/localize/_localize_be.php:129
+msgctxt "vue部分"
+msgid "添加方式"
+msgstr ""
+
+#: module/localize/_localize_be.php:130
+msgctxt "vue部分"
+msgid "* 手动添加至定时发布，需进入对应的草稿或待审将文章批量添加至定时计划列表。"
+msgstr ""
+
+#: module/localize/_localize_be.php:131
+msgctxt "vue部分"
+msgid "定时规则"
+msgstr ""
+
+#: module/localize/_localize_be.php:132
+msgctxt "vue部分"
+msgid "周期处理上限"
+msgstr ""
+
+#: module/localize/_localize_be.php:133
+msgctxt "vue部分"
+msgid "每定时周期处理文章上限"
+msgstr ""
+
+#: module/localize/_localize_be.php:134
+msgctxt "vue部分"
+msgid "每天发布文章数"
+msgstr ""
+
+#: module/localize/_localize_be.php:135
+msgctxt "vue部分"
+msgid "发布时间间隔"
+msgstr ""
+
+#: module/localize/_localize_be.php:136
+msgctxt "vue部分"
+msgid "随机（推荐）"
+msgstr ""
+
+#: module/localize/_localize_be.php:137
+msgctxt "vue部分"
+msgid "固定"
+msgstr ""
+
+#: module/localize/_localize_be.php:138
+msgctxt "vue部分"
+msgid "分钟"
+msgstr ""
+
+#: module/localize/_localize_be.php:139
+msgctxt "vue部分"
+msgid "每日发布时间区间"
+msgstr ""
+
+#: module/localize/_localize_be.php:140
+msgctxt "vue部分"
+msgid "每日统一"
+msgstr ""
+
+#: module/localize/_localize_be.php:141
+msgctxt "vue部分"
+msgid "每日各异"
+msgstr ""
+
+#: module/localize/_localize_be.php:142
+msgctxt "vue部分"
+msgid "周期: "
+msgstr ""
+
+#: module/localize/_localize_be.php:143
+msgctxt "vue部分"
+msgid "失败任务"
+msgstr ""
+
+#: module/localize/_localize_be.php:144
+msgctxt "vue部分"
+msgid "重新加入任务"
+msgstr ""
+
+#: module/localize/_localize_be.php:145
+msgctxt "vue部分"
+msgid "检测直接发布"
+msgstr ""
+
+#: module/localize/_localize_be.php:146
+msgctxt "vue部分"
+msgid "定时周期"
+msgstr ""
+
+#: module/localize/_localize_be.php:147
+msgctxt "vue部分"
+msgid "每小时检测"
+msgstr ""
+
+#: module/localize/_localize_be.php:148
+msgctxt "vue部分"
+msgid "每天检测"
+msgstr ""
+
+#: module/localize/_localize_be.php:149
+msgctxt "vue部分"
+msgid "所有文章"
+msgstr ""
+
+#: module/localize/_localize_be.php:150
+msgctxt "vue部分"
+msgid "未定时"
+msgstr ""
+
+#: module/localize/_localize_be.php:151
+msgctxt "vue部分"
+msgid "已定时"
+msgstr ""
+
+#: module/localize/_localize_be.php:152
+msgctxt "vue部分"
+msgid "暂无数据"
+msgstr ""
+
+#: module/localize/_localize_be.php:153
+msgctxt "vue部分"
+msgid "类型"
+msgstr ""
+
+#: module/localize/_localize_be.php:154
+msgctxt "vue部分"
+msgid "状态"
+msgstr ""
+
+#: module/localize/_localize_be.php:155
+msgctxt "vue部分"
+msgid "编辑"
+msgstr ""
+
+#: module/localize/_localize_be.php:156
+msgctxt "vue部分"
+msgid "预览"
+msgstr ""
+
+#: module/localize/_localize_be.php:157
+msgctxt "vue部分"
+msgid "激活PRO版本"
+msgstr ""
+
+#: module/localize/_localize_be.php:158
+msgctxt "vue部分"
+msgid "* TabBar(标签栏)仅适用移动端，仅在启用了分享组件的文章详情中出现。分享按钮在微信显示提示弹窗，在普通浏览器中将调用浏览器自身分享功能。"
+msgstr ""
+
+#: module/localize/_localize_be.php:159
+msgctxt "vue部分"
+msgid "文章内容"
+msgstr ""
+
+#: module/localize/_localize_be.php:160
+msgctxt "vue部分"
+msgid "打赏"
+msgstr ""
+
+#: module/localize/_localize_be.php:161
+msgctxt "vue部分"
+msgid "赞(0)"
+msgstr ""
+
+#: module/localize/_localize_be.php:162
+msgctxt "vue部分"
+msgid "微海报"
+msgstr ""
+
+#: module/localize/_localize_be.php:163
+msgctxt "vue部分"
+msgid "分享"
+msgstr ""
+
+#: module/localize/_localize_be.php:164
+msgctxt "vue部分"
+msgid "(暂无)"
+msgstr ""
+
+#: module/localize/_localize_be.php:165
+msgctxt "vue部分"
+msgid "Magic Post"
+msgstr ""
+
+#: module/localize/_localize_be.php:166
+msgctxt "vue部分"
+msgid "定时设置"
+msgstr ""
+
+#: module/localize/_localize_be.php:167
+msgctxt "vue部分"
+msgid "定时列表"
+msgstr ""
+
+#: module/localize/_localize_be.php:168
+msgctxt "vue部分"
+msgid "文章搬家"
+msgstr ""
+
+#: module/localize/_localize_be.php:169
+msgctxt "vue部分"
+msgid "按分类"
+msgstr ""
+
+#: module/localize/_localize_be.php:170
+msgctxt "vue部分"
+msgid "按标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:171
+msgctxt "vue部分"
+msgid "文章翻译"
+msgstr ""
+
+#: module/localize/_localize_be.php:172
+msgctxt "vue部分"
+msgid "HTML清理"
+msgstr ""
+
+#: module/localize/_localize_be.php:173
+msgctxt "vue部分"
+msgid "下载管理"
+msgstr ""
+
+#: module/localize/_localize_be.php:174
+msgctxt "vue部分"
+msgid "社交分享"
+msgstr ""
+
+#: module/localize/_localize_be.php:175
+msgctxt "vue部分"
+msgid "内容目录"
+msgstr ""
+
+#: module/localize/_localize_be.php:176
+msgctxt "vue部分"
+msgid "插件设置"
+msgstr ""
+
+#: module/localize/_localize_be.php:177
+msgctxt "vue部分"
+msgid "PRO版本"
+msgstr ""
+
+#: module/localize/_localize_be.php:178
+msgctxt "vue部分"
+msgid "全选"
+msgstr ""
+
+#: module/localize/_localize_be.php:179
+msgctxt "vue部分"
+msgid "请输入标签"
+msgstr ""
+
+#: module/localize/_localize_be.php:180
+msgctxt "vue部分"
+msgid "标签长度不能超过${props.attrs.maxLength}个字符"
+msgstr ""
+
+#: module/localize/_localize_be.php:181
+msgctxt "vue部分"
+msgid "标签不能包含特殊字符"
+msgstr ""
+
+#: module/localize/_localize_be.php:182
+msgctxt "vue部分"
+msgid "标签格式不正确"
+msgstr ""
+
+#: module/localize/_localize_be.php:183
+msgctxt "vue部分"
+msgid "标签已预设，无需重复添加"
+msgstr ""
+
+#: module/localize/_localize_be.php:184
+msgctxt "vue部分"
+msgid "已存在"
+msgstr ""
+
+#: module/localize/_localize_be.php:185
+msgctxt "vue部分"
+msgid "已移除"
+msgstr ""
+
+#: module/localize/_localize_be.php:186
+msgctxt "vue部分"
+msgid "收起面板"
+msgstr ""
+
+#: module/localize/_localize_be.php:187
+msgctxt "vue部分"
+msgid "筛选"
+msgstr ""
+
+#: module/localize/_localize_be.php:188
+msgctxt "vue部分"
+msgid "主题推荐"
+msgstr ""
+
+#: module/localize/_localize_be.php:189
+msgctxt "vue部分"
+msgid "插件推荐"
+msgstr ""
+
+#: module/localize/_localize_be.php:190
+msgctxt "vue部分"
+msgid "WP教程"
+msgstr ""
+
+#: module/localize/_localize_be.php:191
+msgctxt "vue部分"
+msgid "详情"
+msgstr ""
+
+#: module/localize/_localize_be.php:192
+msgctxt "vue部分"
+msgid "全屏"
+msgstr ""
+
+#: module/localize/_localize_be.php:193
+msgctxt "vue部分"
+msgid "闪电博"
+msgstr ""
+
+#: module/localize/_localize_be.php:194
+msgctxt "vue部分"
+msgid "免费插件"
+msgstr ""
+
+#: module/localize/_localize_be.php:195
+msgctxt "vue部分"
+msgid "说明文档"
+msgstr ""
+
+#: module/localize/_localize_be.php:196
+msgctxt "vue部分"
+msgid "服务协议"
+msgstr ""
+
+#: module/localize/_localize_be.php:197
+msgctxt "vue部分"
+msgid "隐私条例"
+msgstr ""
+
+#: module/localize/_localize_be.php:198
+msgctxt "vue部分"
+msgid "版本：%s"
+msgstr ""
+
+#: module/localize/_localize_be.php:199
+msgctxt "vue部分"
+msgid "您修改的设置尚未保存，确定离开此页面吗？"
+msgstr ""
+
+#: module/localize/_localize_be.php:200
+msgctxt "vue部分"
+msgid "保存并离开"
+msgstr ""
+
+#: module/localize/_localize_be.php:201
+msgctxt "vue部分"
+msgid "放弃修改"
+msgstr ""
+
+#: module/localize/_localize_be.php:202
+msgctxt "vue部分"
+msgid "保存设置"
+msgstr ""
+
+#: module/localize/_localize_be.php:203
+msgctxt "vue部分"
+msgid "首页"
+msgstr ""
+
+#: module/localize/_localize_be.php:204
+msgctxt "vue部分"
+msgid "PRO版"
+msgstr ""
+
+#: module/localize/_localize_be.php:205
+msgctxt "vue部分"
+msgid "Free版"
+msgstr ""
+
+#: module/localize/_localize_be.php:206
+msgctxt "vue部分"
+msgid "插件主页"
+msgstr ""
+
+#: module/localize/_localize_be.php:207
+msgctxt "vue部分"
+msgid "激活插件"
+msgstr ""
+
+#: module/localize/_localize_be.php:208
+msgctxt "vue部分"
+msgid "或"
+msgstr ""
+
+#: module/localize/_localize_be.php:209
+msgctxt "vue部分"
+msgid "现在更新"
+msgstr ""
+
+#: module/localize/_localize_be.php:210
+msgctxt "vue部分"
+msgid "当前%s有新版本可用."
+msgstr ""
+
+#: module/localize/_localize_be.php:211
+msgctxt "vue部分"
+msgid "查看版本%s详情"
+msgstr ""
+
+#: module/localize/_localize_be.php:212
+msgctxt "vue部分"
+msgid "输入关键字筛选"
+msgstr ""
+
+#: module/localize/_localize_be.php:213
+msgctxt "vue部分"
+msgid "完成"
+msgstr ""
+
+#: module/localize/_localize_be.php:214
+msgctxt "vue部分"
+msgid "没有匹配 %s 的记录，请换个关键词试试..."
+msgstr ""
+
+#: module/localize/_localize_be.php:215
+msgctxt "vue部分"
+msgid "别名:"
+msgstr ""
+
+#: module/localize/_localize_be.php:216
+msgctxt "vue部分"
+msgid "选择文件"
+msgstr ""
+
+#: module/localize/_localize_be.php:217
+msgctxt "vue部分"
+msgid "删除"
+msgstr ""
+
+#: module/localize/_localize_be.php:218
+msgctxt "vue部分"
+msgid "选择"
+msgstr ""
+
+#: module/localize/_localize_be.php:219
+msgctxt "vue部分"
+msgid "插入URL"
+msgstr ""
+
+#: module/localize/_localize_be.php:220
+msgctxt "vue部分"
+msgid "设置链接"
+msgstr ""
+
+#: module/localize/_localize_be.php:221
+msgctxt "vue部分"
+msgid "请输入激活码"
+msgstr ""
+
+#: module/localize/_localize_be.php:222
+msgctxt "vue部分"
+msgid "绑定信息确认"
+msgstr ""
+
+#: module/localize/_localize_be.php:223
+msgctxt "vue部分"
+msgid "验证失败，可提交售后工单"
+msgstr ""
+
+#: module/localize/_localize_be.php:224
+msgctxt "vue部分"
+msgid "温馨提示"
+msgstr ""
+
+#: module/localize/_localize_be.php:225
+msgctxt "vue部分"
+msgid "验证成功!"
+msgstr ""
+
+#: module/localize/_localize_be.php:226
+msgctxt "vue部分"
+msgid "提交验证"
+msgstr ""
+
+#: module/localize/_localize_be.php:227
+msgctxt "vue部分"
+msgid "查看我的激活码"
+msgstr ""
+
+#: module/localize/_localize_be.php:228
+msgctxt "vue部分"
+msgid "去购买"
+msgstr ""
+
+#: module/localize/_localize_be.php:229
+msgctxt "vue部分"
+msgid "绑定域名后将不可更改，确认绑定到域名：%s?"
+msgstr ""
+
+#: module/localize/_localize_be.php:230
+msgctxt "vue部分"
+msgid "激活KEY"
+msgstr ""
+
+#: module/localize/_localize_be.php:231
+msgctxt "vue部分"
+msgid "请输入激活KEY"
+msgstr ""
+
+#: module/localize/_localize_be.php:232
+msgctxt "vue部分"
+msgid "获取KEY"
+msgstr ""
+
+#: module/localize/_localize_be.php:233
+msgctxt "vue部分"
+msgid "验证中..."
+msgstr ""
+
+#: module/localize/_localize_be.php:234
+msgctxt "vue部分"
+msgid "关闭"
+msgstr ""
+
+#: module/localize/_localize_be.php:235
+msgctxt "vue部分"
+msgid "验证成功"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:4
+msgctxt "js部分"
+msgid "密码"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:5
+msgctxt "js部分"
+msgid "已复制"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:6
+msgctxt "js部分"
+msgid "前往下载页面"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:7
+msgctxt "js部分"
+msgid "低版本浏览器需手动复制密码再前往下载页面下载，谢谢"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:8
+msgctxt "js部分"
+msgid "该浏览器不支持自动复制，请手动复制密码再跳转链接"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:9
+msgctxt "js部分"
+msgid "下载异常，请联系网站管理员修正下载链接"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:10
+msgctxt "js部分"
+msgid "下载异常，请联系网站管理员"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:11
+msgctxt "js部分"
+msgid "请先登录，谢谢"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:12
+msgctxt "js部分"
+msgid "请先留下您的评论，谢谢"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:13
+msgctxt "js部分"
+msgid "分享到..."
+msgstr ""
+
+#: module/localize/_localize_front_js.php:14
+msgctxt "js部分"
+msgid "页面标题"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:15
+msgctxt "js部分"
+msgid "点击右上角即可分享"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:16
+msgctxt "js部分"
+msgid "已赞"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:17
+msgctxt "js部分"
+msgid "微信扫码分享"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:18
+msgctxt "js部分"
+msgid "手机微信扫码后分享。"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:19
+msgctxt "js部分"
+msgid "已赞(%s)"
+msgstr ""
+
+#: module/localize/_localize_front_js.php:20
+msgctxt "js部分"
+msgid "内容目录"
+msgstr ""

@@ -1,0 +1,1065 @@
+{
+  "module": {
+    "items": [
+      {
+        "name": "编辑增强",
+        "slug": "enhance",
+        "path": "/enhance",
+        "pro": true,
+        "description": "通过发布时间选项、克隆、自动Slug等实用功能，来提升内容发布效率。"
+      },
+      {
+        "name": "内容目录",
+        "slug": "toc",
+        "path": "/toc",
+        "pro": true,
+        "description": "内容目录智能生成。"
+      },
+      {
+        "name": "定时发布",
+        "slug": "schedule",
+        "path": "/schedule",
+        "pro": true,
+        "description": "通过配置自定义规则以定时发布文章。"
+      },
+      {
+        "name": "文章搬家",
+        "slug": "move",
+        "path": "/move",
+        "pro": true,
+        "description": "支持批量修改文章的分类或者标签。"
+      },
+      {
+        "name": "文章翻译",
+        "slug": "translate",
+        "path": "/translate",
+        "pro": true,
+        "description": "利用第三方翻译API对文章进行翻译，快速生产大量原创文章。"
+      },
+      {
+        "name": "HTML清理",
+        "slug": "clean",
+        "path": "/clean",
+        "pro": false,
+        "description": "一键清理转载文章不必要的HTML代码标签。"
+      },
+      {
+        "name": "文章分享",
+        "slug": "share",
+        "path": "/share",
+        "pro": false,
+        "description": "提供网站打赏，文章点赞、微海报和社交分享组件。"
+      },
+      {
+        "name": "下载管理",
+        "slug": "download",
+        "path": "/download",
+        "pro": false,
+        "description": "启用后即可在文章编辑中提供资源下载。"
+      }
+    ]
+  },
+  "translate": {
+    "label": "翻译设置",
+    "group": "translate",
+    "slug": "translate",
+    "switch_slug": "translate_switch",
+    "description": "利用谷歌、DeepL和百度等翻译API接口，对文章内容进行翻译，提升内容发布效率。",
+    "fields": [
+      {
+        "label": "选择API",
+        "slug": "api",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "谷歌翻译（官方）",
+              "value": "google"
+            },
+            {
+              "label": "谷歌翻译（第三方）",
+              "value": "google2"
+            },
+            {
+              "label": "百度翻译（官方）",
+              "value": "baidu"
+            }
+          ]
+        },
+        "group": {
+          "fields": [
+            {
+              "label": "API Key",
+              "slug": "google.key",
+              "type": "input",
+              "show": "google",
+              "attrs": {
+                "placeholder": "请输入API Key"
+              },
+              "remark": "* 您可以通过注册登录<a target=\"_blank\" href=\"https://cloud.google.com/\" class=\"link\">Google Cloud</a>获取，<a target=\"_blank\" href=\" https://www.wbolt.com/cloud-translation-api.html\" class=\"link\">查看谷歌翻译API申请及配置教程</a>。"
+            },
+            {
+              "label": "选择代理",
+              "slug": "google2.proxy",
+              "type": "radio",
+              "show": "google2",
+              "attrs": {
+                "items": [
+                  {
+                    "label": "否",
+                    "value": "none"
+                  },
+                  {
+                    "label": "闪电博",
+                    "value": "wbolt"
+                  }
+                ]
+              },
+              "remark": "* 如果网站服务器为中国大陆境内服务器，请勿选择该选项；代理服务器可能会有限制，如果翻译失败，请稍后再试。"
+            },
+            {
+              "label": "API Key",
+              "slug": "baidu.key",
+              "type": "input",
+              "show": "baidu",
+              "attrs": {
+                "placeholder": "请输入API Key"
+              }
+            },
+            {
+              "label": "Secret Key",
+              "slug": "baidu.secret",
+              "type": "input",
+              "show": "baidu",
+              "attrs": {
+                "placeholder": "请输入Secret Key"
+              },
+              "remark": "<a target=\"_blank\" href=\"https://ai.baidu.com/tech/mt/doc_trans\" class=\"link\">百度文档翻译</a>，非实時翻译返回翻译结果，提交需要翻译的文档，一段时间后再获取翻译的文档。"
+            }
+          ]
+        }
+      },
+      {
+        "label": "翻译内容",
+        "slug": "trans",
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "标题",
+              "value": "post_title"
+            },
+            {
+              "label": "正文",
+              "value": "post_content"
+            }
+          ]
+        }
+      },
+      {
+        "label": "自动翻译",
+        "slug": "auto",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "未启用。",
+            "1": "已启用，自动翻译仅对草稿进行扫描翻译，不对其他文章状态执行任务。"
+          }
+        }
+      },
+      {
+        "label": "翻译语言",
+        "slug": "lan",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "英译中（默认）",
+              "value": "en-zh"
+            },
+            {
+              "label": "中译英",
+              "value": "zh-en"
+            }
+          ]
+        }
+      },
+      {
+        "label": "错误日志",
+        "slug": "error_log",
+        "type": "log-list",
+        "custom": true
+      }
+    ],
+    "default": {
+      "tags_api_select": "google",
+      "google": {
+        "key": ""
+      },
+      "google2": {
+        "proxy": "none"
+      },
+      "baidu": {
+        "key": "",
+        "secret": ""
+      },
+      "trans": [
+        "post_title",
+        "post_content"
+      ],
+      "auto": 1,
+      "lang": "en-zh",
+      "error_log": []
+    },
+    "disable": []
+  },
+  "download": {
+    "label": "下载设置",
+    "group": "download",
+    "slug": "download",
+    "switch_slug": "download_switch",
+    "description": "帮助站长快速实现文章分享下载资源，支持国内外常见网盘及自定义方式。",
+    "dl_type_items": [
+      {
+        "label": "本地",
+        "slug": "local",
+        "meta_placeholder": "点击右侧上传按钮或者直接贴入下载链接"
+      },
+      {
+        "label": "百度网盘",
+        "slug": "baidu"
+      },
+      {
+        "label": "城通",
+        "slug": "ct"
+      },
+      {
+        "label": "磁力链接",
+        "slug": "magnet",
+        "meta_placeholder": "请输入以magnet:开头的磁力链接"
+      },
+      {
+        "label": "迅雷",
+        "slug": "xunlei",
+        "meta_placeholder": "请输入以thunder://开头的迅雷链接"
+      },
+      {
+        "label": "阿里云盘",
+        "slug": "aliyun"
+      },
+      {
+        "label": "Google Drive",
+        "slug": "google"
+      },
+      {
+        "label": "Dropbox",
+        "slug": "dropbox"
+      },
+      {
+        "label": "Box",
+        "slug": "box"
+      },
+      {
+        "label": "Nitroflare",
+        "slug": "nitroflare"
+      },
+      {
+        "label": "Prefiles",
+        "slug": "prefiles"
+      },
+      {
+        "label": "Rapidgator",
+        "slug": "rapidgator"
+      }
+    ],
+    "fields": [
+      {
+        "label": "是否需要登录",
+        "slug": "need_member",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已关闭，访客无须登录即可下载。",
+            "1": "已开启，访客须注册登录后才可以下载。"
+          }
+        }
+      },
+      {
+        "label": "支持下载类型",
+        "slug": "supply_post_types",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "文章",
+              "value": "post"
+            }
+          ]
+        }
+      },
+      {
+        "label": "下载浮层",
+        "slug": "sticky_mode",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "关闭",
+              "value": "0"
+            },
+            {
+              "label": "在头部",
+              "value": "1"
+            },
+            {
+              "label": "在底部",
+              "value": "2"
+            }
+          ]
+        },
+        "remark": "* 启用下载浮层后，将会页面顶部或者底部展示下载按钮相关内容。如您所使用的主题已经有顶部或者底部固定栏，切勿启用该功能。"
+      },
+      {
+        "label": "预设下载方式",
+        "slug": "dl_type_items",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {}
+      },
+      {
+        "label": "自定义方式",
+        "custom": true,
+        "slug": "dlt_custom",
+        "type": "custom-download-type",
+        "pro": true
+      },
+      {
+        "label": "兼容暗黑模式",
+        "slug": "dark_mode_class",
+        "type": "input",
+        "attrs": {
+          "placeholder": "填写css类名，如 .wb-dm"
+        },
+        "remark": "* 填写主题暗黑模式激活时的css类名，以响应模式间的切换。<a href=\"https://www.wbolt.com/faq/41150.html\" target=\"faq\">如何找到暗黑模式css类名?</a>"
+      },
+      {
+        "label": "版权说明",
+        "slug": "remark",
+        "type": "textarea"
+      }
+    ],
+    "default": {
+      "switch": 0,
+      "need_member": 0,
+      "sticky_mode": 0,
+      "dl_type_items": [
+        "local",
+        "baidu",
+        "ct",
+        "magnet",
+        "xunlei",
+        "aliyun"
+      ],
+      "dlt_custom": [],
+      "remark": "",
+      "dark_mode_class": "",
+      "supply_post_types": [
+        "post"
+      ]
+    },
+    "disable": []
+  },
+  "toc": {
+    "label": "内容目录",
+    "group": "toc",
+    "slug": "toc",
+    "switch_slug": "toc_switch",
+    "description": "利用该功能模块，对文章的Heading标题快速抽离组合为TOC目录，提升用户体验和SEO友好度。",
+    "fields": [
+      {
+        "label": "自动目录",
+        "slug": "auto_insert_content",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已关闭，可手动将短代码 [magicpost_toc_items] 插入内容适当位置，作为目录模块。",
+            "1": "已开启，自动抽离Heading标题形成内容目录。"
+          }
+        }
+      },
+      {
+        "label": "目录标题",
+        "slug": "toc_label",
+        "type": "input",
+        "attrs": {
+          "placeholder": "请输入目录标题"
+        }
+      },
+      {
+        "label": "目录结构",
+        "slug": "ct_mode",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "H2",
+              "value": "2"
+            },
+            {
+              "label": "H3",
+              "value": "3"
+            },
+            {
+              "label": "H2 & H3",
+              "value": "23"
+            },
+            {
+              "label": "H3 & H4",
+              "value": "34"
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "* 提取组合成TOC模块目录的目标标题标签。\"H2 & H3\" 代表提取H2为一级目录，H3为二级目录。"
+        }
+      },
+      {
+        "label": "目录风格",
+        "slug": "style_toc_mode",
+        "type": "remark",
+        "group": {
+          "fields": [
+            {
+              "label": "正文展开状态",
+              "slug": "content_unfold",
+              "type": "switch",
+              "attrs": {
+                "inactive-value": "0",
+                "active-value": "1",
+                "remark": {
+                  "0": "默认不展开",
+                  "1": "默认展开"
+                }
+              }
+            },
+            {
+              "label": "正文显示条目",
+              "slug": "style_content_max",
+              "type": "input-number",
+              "attrs": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "size": "small"
+              }
+            },
+            {
+              "label": "小工具显示条目",
+              "slug": "style_widget_max",
+              "type": "input-number",
+              "attrs": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "size": "small"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "排版样式",
+        "slug": "style",
+        "custom": true,
+        "type": "tab-pane",
+        "attrs": {
+          "items": [
+            {
+              "label": "正文目录",
+              "slug": "content",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "背景色",
+                  "slug": "background_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "边框线",
+                  "slug": "border_width",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 20,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "边框色",
+                  "slug": "border_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "上边距",
+                  "slug": "margin_top",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "下边距",
+                  "slug": "margin_bottom",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "内边距",
+                  "slug": "padding",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "小工具",
+              "slug": "widget",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "背景色",
+                  "slug": "background_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "边框线",
+                  "slug": "border_width",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 20,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "边框色",
+                  "slug": "border_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "上边距",
+                  "slug": "margin_top",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "下边距",
+                  "slug": "margin_bottom",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "内边距",
+                  "slug": "padding",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "自定义CSS",
+              "slug": "css",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "自定义CSS",
+                  "slug": "custom_style",
+                  "type": "textarea",
+                  "attrs": {
+                    "autosize": {
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "toc_switch": 0,
+      "auto_insert_content": 0,
+      "toc_label": "内容目录",
+      "ct_mode": "2",
+      "style_content_unfold": 0,
+      "style_content_max": 5,
+      "style_widget_unfold": 0,
+      "style_widget_max": 5,
+      "style": {
+        "content": {
+          "background_color": "",
+          "border_width": 0,
+          "border_color": "",
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "padding": 0
+        },
+        "widget": {
+          "background_color": "",
+          "border_width": 0,
+          "border_color": "",
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "padding": 0
+        },
+        "custom_style": ""
+      }
+    },
+    "disable": []
+  },
+  "clean": {
+    "label": "清理设置",
+    "group": "clean",
+    "slug": "clean",
+    "switch_slug": "clean_switch",
+    "description": "通过清理、搜索替换规则设定，对转载内容代码快速清理。"
+  },
+  "share": {
+    "label": "分享设置",
+    "group": "share",
+    "slug": "share",
+    "switch_slug": "share_switch",
+    "description": "实现文章打赏、点赞、微海报及常见社交分享选项。",
+    "share_items_api": [
+      {
+        "value": "qq",
+        "label": "QQ",
+        "format": "http://connect.qq.com/widget/shareqq/index.html?url=%s&title=%s&pics=%s&summary=%s"
+      },
+      {
+        "value": "weixin",
+        "label": "微信",
+        "format": "qrcode"
+      },
+      {
+        "value": "weibo",
+        "label": "微博",
+        "format": "https://service.weibo.com/share/share.php?url=%s&title=%s&pic=%s&searchPic=true"
+      },
+      {
+        "value": "line",
+        "label": "LINE",
+        "format": "https://social-plugins.line.me/lineit/share?url=%s"
+      },
+      {
+        "value": "facebook",
+        "label": "Facebook",
+        "format": "https://www.facebook.com/sharer/sharer.php?u=%s"
+      },
+      {
+        "value": "x",
+        "label": "X",
+        "format": "https://twitter.com/intent/tweet?url=%s&text=这篇文章很不错%s"
+      },
+      {
+        "value": "whatsapp",
+        "label": "Whatsapp",
+        "format": "https://api.whatsapp.com/send/?text=这篇文章很不错，推荐你看看%s&type=custom_url"
+      },
+      {
+        "value": "linkedin",
+        "label": "Linkedin",
+        "format": "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s"
+      },
+      {
+        "value": "pinterest",
+        "label": "Pinterest",
+        "format": "https://pinterest.com/pin/create/button/?url=%s&title=%s&media=%s&description=%s"
+      },
+      {
+        "value": "vk",
+        "label": "VK",
+        "format": "https://vk.com/share.php?url=%s&title=%s"
+      },
+      {
+        "value": "reddit",
+        "label": "Reddit",
+        "format": "https://www.reddit.com/submit?url=%s&title=%s"
+      },
+      {
+        "value": "email",
+        "label": "Email",
+        "format": "mailto:?body=这篇文章很不错，推荐你看看：%s&subject=推荐阅读"
+      }
+    ],
+    "fields": [
+      {
+        "label": "选择组件",
+        "slug": "dwqr_module",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "打赏",
+              "slug": "donate",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "点赞",
+              "slug": "like",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "微海报",
+              "slug": "poster",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "分享",
+              "slug": "share",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "选择需要显示的组件。"
+        }
+      },
+      {
+        "label": "TabBar",
+        "slug": "tabbar_switch",
+        "pro": true,
+        "custom": true,
+        "type": "switch",
+        "attrs": {
+          "active-value": "1",
+          "inactive-value": "0",
+          "remark": {
+            "0": "已关闭",
+            "1": "已开启"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "TabBar(标签栏)仅适用移动端，仅在启用了分享组件的文章详情中出现。可因应主题特点选择是否启用。"
+        }
+      },
+      {
+        "label": "配色方案",
+        "slug": "theme_color",
+        "type": "color",
+        "attrs": {
+          "show-alpha": true,
+          "default": "#06c",
+          "predefine": [
+            "#0066CC",
+            "#A02533",
+            "#CA891E",
+            "#6BB020",
+            "#8B572A",
+            "#000000",
+            "#666666"
+          ]
+        }
+      },
+      {
+        "label": "展示位置",
+        "slug": "dwqr_module_position",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "文章底部",
+              "value": "0"
+            },
+            {
+              "label": "文章左侧悬浮",
+              "value": "1"
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "* 选择在文章左侧位置展示，可能会受主题的结构/样式影响导致不可见或悬浮失效，插件无法做到全部兼容。故请根据实际效果选择适合的展示位置。"
+        }
+      },
+      {
+        "label": "样式预览",
+        "slug": "preview",
+        "custom": true,
+        "type": "preview"
+      },
+      {
+        "label": "组件设置",
+        "slug": "item_setting",
+        "custom": true,
+        "type": "tab-pane",
+        "attrs": {
+          "items": [
+            {
+              "label": "打赏二维码",
+              "slug": "donate",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "微信收款码",
+                  "slug": "wechat_qrcode",
+                  "type": "img",
+                  "remark": "* 请上传1:1尺寸规格的微信收款二维码图片，<a href='https://www.wbolt.com/how-to-get-wechat-and-alipay-qr-code.html' target='_blank'>如何获取微信收款二维码</a>？"
+                },
+                {
+                  "label": "支付宝收款码",
+                  "slug": "alipay_qrcode",
+                  "type": "img",
+                  "remark": "* 请上传1:1尺寸规格的支付宝收款二维码图片，<a href='https://www.wbolt.com/how-to-get-wechat-and-alipay-qr-code.html' target='_blank'>如何获取支付宝收款二维码</a>？"
+                }
+              ]
+            },
+            {
+              "label": "微海报",
+              "slug": "poster",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "站点logo",
+                  "slug": "logo_url",
+                  "type": "img",
+                  "remark": "* 请上传站点的logo图片，用于微海报生成。"
+                },
+                {
+                  "label": "海报默认图",
+                  "slug": "cover_url",
+                  "type": "img",
+                  "remark": "* 当文章没有特色图及其他图片时，会使用默认图作为海报头图。建议选择与如下设定的海报比例一致的图片。"
+                },
+                {
+                  "label": "微海报样式",
+                  "slug": "poster_theme",
+                  "type": "radio",
+                  "attrs": {
+                    "items": [
+                      {
+                        "label": "普通版",
+                        "value": "0"
+                      },
+                      {
+                        "label": "风格1",
+                        "value": "1"
+                      },
+                      {
+                        "label": "风格2",
+                        "value": "2"
+                      },
+                      {
+                        "label": "风格3",
+                        "value": "3"
+                      },
+                      {
+                        "label": "风格4",
+                        "value": "4"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "label": "分享设置",
+              "slug": "share",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "文章分享渠道",
+                  "slug": "share_ways",
+                  "type": "checkbox",
+                  "custom": true,
+                  "attrs": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "dwqr_module": {
+        "donate": "1",
+        "like": "1",
+        "poster": "1",
+        "share": "1"
+      },
+      "tabbar_switch": 0,
+      "theme_color": "#0066CC",
+      "dwqr_module_position": "0",
+      "donate": {
+        "wechat_qrcode": "",
+        "alipay_qrcode": ""
+      },
+      "poster": {
+        "logo_url": "",
+        "cover_url": "",
+        "poster_theme": "0"
+      },
+      "share_ways": [
+        "qq",
+        "weixin",
+        "weibo"
+      ]
+    },
+    "disable": []
+  },
+  "move": {
+    "label": "搬家设置",
+    "group": "move",
+    "slug": "move",
+    "switch_slug": "move_switch",
+    "description": "快速实现文章按分类目录或者标签，实现文章迁移工作，以满足当前内容运营需求。"
+  },
+  "schedule": {
+    "label": "定时设置",
+    "group": "schedule",
+    "slug": "schedule",
+    "switch_slug": "schedule_switch",
+    "description": "基于WordPress内置的定时发布，实现可自定义规则的手动或者自动定时发布任务编排。"
+  },
+  "enhance": {
+    "label": "编辑增强",
+    "group": "enhance",
+    "slug": "enhance",
+    "switch_slug": "enhance_switch",
+    "description": "通过发布时间选项、克隆、自动Slug等实用功能，来提升内容发布效率。",
+    "fields": [
+      {
+        "label": "发布时间",
+        "slug": "publish_time",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已关闭",
+            "1": "已开启"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "开启后，在文章编辑页面，会显示一个发布时间选项，方便站长快速设置文章发布时间。"
+        }
+      },
+      {
+        "label": "克隆文章",
+        "slug": "clone_post",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已关闭",
+            "1": "已开启"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "启用后，在文章或者页面列表快速选项增加克隆选项。以实现一键复制并创建新文章或页面。"
+        }
+      },
+      {
+        "label": "自动Slug",
+        "slug": "auto_slug",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已关闭",
+            "1": "已开启"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "<p>温馨提示：</p><ul><li>1. 自动Slug需将固定链接结构设置为名称型，文章名或者自定义结构。</li><li>2. 自动Slug依赖文章翻译API将别名翻译为英文。</li><li>3. 特别字符去除，以缩短Slug长度。</li></ul>"
+        }
+      }
+    ],
+    "default": {
+      "publish_time": 0,
+      "clone_post": 0,
+      "auto_slug": 0
+    },
+    "disable": []
+  }
+}

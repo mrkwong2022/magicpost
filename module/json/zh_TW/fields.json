@@ -1,0 +1,1065 @@
+{
+  "module": {
+    "items": [
+      {
+        "name": "編輯增強",
+        "slug": "enhance",
+        "path": "/enhance",
+        "pro": true,
+        "description": "通過釋出時間選項、克隆、自動Slug等實用功能，來提升內容釋出效率。"
+      },
+      {
+        "name": "內容目錄",
+        "slug": "toc",
+        "path": "/toc",
+        "pro": true,
+        "description": "內容目錄智慧生成。"
+      },
+      {
+        "name": "定時釋出",
+        "slug": "schedule",
+        "path": "/schedule",
+        "pro": true,
+        "description": "通過配置自定義規則以定時釋出文章。"
+      },
+      {
+        "name": "文章搬家",
+        "slug": "move",
+        "path": "/move",
+        "pro": true,
+        "description": "支援批量修改文章的分類或者標籤。"
+      },
+      {
+        "name": "文章翻譯",
+        "slug": "translate",
+        "path": "/translate",
+        "pro": true,
+        "description": "利用第三方翻譯API對文章進行翻譯，快速生產大量原創文章。"
+      },
+      {
+        "name": "HTML清理",
+        "slug": "clean",
+        "path": "/clean",
+        "pro": false,
+        "description": "一鍵清理轉載文章不必要的HTML程式碼標籤。"
+      },
+      {
+        "name": "文章分享",
+        "slug": "share",
+        "path": "/share",
+        "pro": false,
+        "description": "提供網站打賞，文章點贊、微海報和社交分享元件。"
+      },
+      {
+        "name": "下載管理",
+        "slug": "download",
+        "path": "/download",
+        "pro": false,
+        "description": "啟用後即可在文章編輯中提供資源下載。"
+      }
+    ]
+  },
+  "translate": {
+    "label": "翻譯設定",
+    "group": "translate",
+    "slug": "translate",
+    "switch_slug": "translate_switch",
+    "description": "利用谷歌、DeepL和百度等翻譯API介面，對文章內容進行翻譯，提升內容釋出效率。",
+    "fields": [
+      {
+        "label": "選擇API",
+        "slug": "api",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "谷歌翻譯（官方）",
+              "value": "google"
+            },
+            {
+              "label": "谷歌翻譯（第三方）",
+              "value": "google2"
+            },
+            {
+              "label": "百度翻譯（官方）",
+              "value": "baidu"
+            }
+          ]
+        },
+        "group": {
+          "fields": [
+            {
+              "label": "API Key",
+              "slug": "google.key",
+              "type": "input",
+              "show": "google",
+              "attrs": {
+                "placeholder": "請輸入API Key"
+              },
+              "remark": "* 您可以通過註冊登入<a target=\"_blank\" href=\"https://cloud.google.com/\" class=\"link\">Google Cloud</a>獲取，<a target=\"_blank\" href=\" https://www.wbolt.com/cloud-translation-api.html\" class=\"link\">檢視谷歌翻譯API申請及配置教程</a>。"
+            },
+            {
+              "label": "選擇代理",
+              "slug": "google2.proxy",
+              "type": "radio",
+              "show": "google2",
+              "attrs": {
+                "items": [
+                  {
+                    "label": "否",
+                    "value": "none"
+                  },
+                  {
+                    "label": "閃電博",
+                    "value": "wbolt"
+                  }
+                ]
+              },
+              "remark": "* 如果網站伺服器為中國大陸境內伺服器，請勿選擇該選項；代理伺服器可能會有限制，如果翻譯失敗，請稍後再試。"
+            },
+            {
+              "label": "API Key",
+              "slug": "baidu.key",
+              "type": "input",
+              "show": "baidu",
+              "attrs": {
+                "placeholder": "請輸入API Key"
+              }
+            },
+            {
+              "label": "Secret Key",
+              "slug": "baidu.secret",
+              "type": "input",
+              "show": "baidu",
+              "attrs": {
+                "placeholder": "請輸入Secret Key"
+              },
+              "remark": "<a target=\"_blank\" href=\"https://ai.baidu.com/tech/mt/doc_trans\" class=\"link\">百度文件翻譯</a>，非實時翻譯返回翻譯結果，提交需要翻譯的文件，一段時間後再獲取翻譯的文件。"
+            }
+          ]
+        }
+      },
+      {
+        "label": "翻譯內容",
+        "slug": "trans",
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "標題",
+              "value": "post_title"
+            },
+            {
+              "label": "正文",
+              "value": "post_content"
+            }
+          ]
+        }
+      },
+      {
+        "label": "自動翻譯",
+        "slug": "auto",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "未啟用。",
+            "1": "已啟用，自動翻譯僅對草稿進行掃描翻譯，不對其他文章狀態執行任務。"
+          }
+        }
+      },
+      {
+        "label": "翻譯語言",
+        "slug": "lan",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "英譯中（預設）",
+              "value": "en-zh"
+            },
+            {
+              "label": "中譯英",
+              "value": "zh-en"
+            }
+          ]
+        }
+      },
+      {
+        "label": "錯誤日誌",
+        "slug": "error_log",
+        "type": "log-list",
+        "custom": true
+      }
+    ],
+    "default": {
+      "tags_api_select": "google",
+      "google": {
+        "key": ""
+      },
+      "google2": {
+        "proxy": "none"
+      },
+      "baidu": {
+        "key": "",
+        "secret": ""
+      },
+      "trans": [
+        "post_title",
+        "post_content"
+      ],
+      "auto": 1,
+      "lang": "en-zh",
+      "error_log": []
+    },
+    "disable": []
+  },
+  "download": {
+    "label": "下載設定",
+    "group": "download",
+    "slug": "download",
+    "switch_slug": "download_switch",
+    "description": "幫助站長快速實現文章分享下載資源，支援國內外常見網盤及自定義方式。",
+    "dl_type_items": [
+      {
+        "label": "本地",
+        "slug": "local",
+        "meta_placeholder": "點選右側上傳按鈕或者直接貼入下載連結"
+      },
+      {
+        "label": "百度網盤",
+        "slug": "baidu"
+      },
+      {
+        "label": "城通",
+        "slug": "ct"
+      },
+      {
+        "label": "磁力連結",
+        "slug": "magnet",
+        "meta_placeholder": "請輸入以magnet:開頭的磁力連結"
+      },
+      {
+        "label": "迅雷",
+        "slug": "xunlei",
+        "meta_placeholder": "請輸入以thunder://開頭的迅雷連結"
+      },
+      {
+        "label": "阿里雲盤",
+        "slug": "aliyun"
+      },
+      {
+        "label": "Google Drive",
+        "slug": "google"
+      },
+      {
+        "label": "Dropbox",
+        "slug": "dropbox"
+      },
+      {
+        "label": "Box",
+        "slug": "box"
+      },
+      {
+        "label": "Nitroflare",
+        "slug": "nitroflare"
+      },
+      {
+        "label": "Prefiles",
+        "slug": "prefiles"
+      },
+      {
+        "label": "Rapidgator",
+        "slug": "rapidgator"
+      }
+    ],
+    "fields": [
+      {
+        "label": "是否需要登入",
+        "slug": "need_member",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已關閉，訪客無須登入即可下載。",
+            "1": "已開啟，訪客須註冊登入後才可以下載。"
+          }
+        }
+      },
+      {
+        "label": "支援下載型別",
+        "slug": "supply_post_types",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "文章",
+              "value": "post"
+            }
+          ]
+        }
+      },
+      {
+        "label": "下載浮層",
+        "slug": "sticky_mode",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "關閉",
+              "value": "0"
+            },
+            {
+              "label": "在頭部",
+              "value": "1"
+            },
+            {
+              "label": "在底部",
+              "value": "2"
+            }
+          ]
+        },
+        "remark": "* 啟用下載浮層後，將會頁面頂部或者底部展示下載按鈕相關內容。如您所使用的主題已經有頂部或者底部固定欄，切勿啟用該功能。"
+      },
+      {
+        "label": "預設下載方式",
+        "slug": "dl_type_items",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {}
+      },
+      {
+        "label": "自定義方式",
+        "custom": true,
+        "slug": "dlt_custom",
+        "type": "custom-download-type",
+        "pro": true
+      },
+      {
+        "label": "相容暗黑模式",
+        "slug": "dark_mode_class",
+        "type": "input",
+        "attrs": {
+          "placeholder": "填寫css類名，如 .wb-dm"
+        },
+        "remark": "* 填寫主題暗黑模式啟用時的css類名，以響應模式間的切換。<a href=\"https://www.wbolt.com/faq/41150.html\" target=\"faq\">如何找到暗黑模式css類名?</a>"
+      },
+      {
+        "label": "版權說明",
+        "slug": "remark",
+        "type": "textarea"
+      }
+    ],
+    "default": {
+      "switch": 0,
+      "need_member": 0,
+      "sticky_mode": 0,
+      "dl_type_items": [
+        "local",
+        "baidu",
+        "ct",
+        "magnet",
+        "xunlei",
+        "aliyun"
+      ],
+      "dlt_custom": [],
+      "remark": "",
+      "dark_mode_class": "",
+      "supply_post_types": [
+        "post"
+      ]
+    },
+    "disable": []
+  },
+  "toc": {
+    "label": "內容目錄",
+    "group": "toc",
+    "slug": "toc",
+    "switch_slug": "toc_switch",
+    "description": "利用該功能模組，對文章的Heading標題快速抽離組合為TOC目錄，提升使用者體驗和SEO友好度。",
+    "fields": [
+      {
+        "label": "自動目錄",
+        "slug": "auto_insert_content",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已關閉，可手動將短程式碼 [magicpost_toc_items] 插入內容適當位置，作為目錄模組。",
+            "1": "已開啟，自動抽離Heading標題形成內容目錄。"
+          }
+        }
+      },
+      {
+        "label": "目錄標題",
+        "slug": "toc_label",
+        "type": "input",
+        "attrs": {
+          "placeholder": "請輸入目錄標題"
+        }
+      },
+      {
+        "label": "目錄結構",
+        "slug": "ct_mode",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "H2",
+              "value": "2"
+            },
+            {
+              "label": "H3",
+              "value": "3"
+            },
+            {
+              "label": "H2 & H3",
+              "value": "23"
+            },
+            {
+              "label": "H3 & H4",
+              "value": "34"
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "* 提取組合成TOC模組目錄的目標標題標籤。\"H2 & H3\" 代表提取H2為一級目錄，H3為二級目錄。"
+        }
+      },
+      {
+        "label": "目錄風格",
+        "slug": "style_toc_mode",
+        "type": "remark",
+        "group": {
+          "fields": [
+            {
+              "label": "正文展開狀態",
+              "slug": "content_unfold",
+              "type": "switch",
+              "attrs": {
+                "inactive-value": "0",
+                "active-value": "1",
+                "remark": {
+                  "0": "預設不展開",
+                  "1": "預設展開"
+                }
+              }
+            },
+            {
+              "label": "正文顯示條目",
+              "slug": "style_content_max",
+              "type": "input-number",
+              "attrs": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "size": "small"
+              }
+            },
+            {
+              "label": "小工具顯示條目",
+              "slug": "style_widget_max",
+              "type": "input-number",
+              "attrs": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "size": "small"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "排版樣式",
+        "slug": "style",
+        "custom": true,
+        "type": "tab-pane",
+        "attrs": {
+          "items": [
+            {
+              "label": "正文目錄",
+              "slug": "content",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "背景色",
+                  "slug": "background_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "邊框線",
+                  "slug": "border_width",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 20,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "邊框色",
+                  "slug": "border_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "上邊距",
+                  "slug": "margin_top",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "下邊距",
+                  "slug": "margin_bottom",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "內邊距",
+                  "slug": "padding",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "小工具",
+              "slug": "widget",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "背景色",
+                  "slug": "background_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "邊框線",
+                  "slug": "border_width",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 20,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "邊框色",
+                  "slug": "border_color",
+                  "type": "color-picker",
+                  "attrs": {
+                    "show-alpha": true
+                  }
+                },
+                {
+                  "label": "上邊距",
+                  "slug": "margin_top",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "下邊距",
+                  "slug": "margin_bottom",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                },
+                {
+                  "label": "內邊距",
+                  "slug": "padding",
+                  "type": "input-number",
+                  "attrs": {
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "size": "small",
+                    "placeholder": "px"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "自定義CSS",
+              "slug": "css",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "自定義CSS",
+                  "slug": "custom_style",
+                  "type": "textarea",
+                  "attrs": {
+                    "autosize": {
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "toc_switch": 0,
+      "auto_insert_content": 0,
+      "toc_label": "內容目錄",
+      "ct_mode": "2",
+      "style_content_unfold": 0,
+      "style_content_max": 5,
+      "style_widget_unfold": 0,
+      "style_widget_max": 5,
+      "style": {
+        "content": {
+          "background_color": "",
+          "border_width": 0,
+          "border_color": "",
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "padding": 0
+        },
+        "widget": {
+          "background_color": "",
+          "border_width": 0,
+          "border_color": "",
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "padding": 0
+        },
+        "custom_style": ""
+      }
+    },
+    "disable": []
+  },
+  "clean": {
+    "label": "清理設定",
+    "group": "clean",
+    "slug": "clean",
+    "switch_slug": "clean_switch",
+    "description": "通過清理、搜尋替換規則設定，對轉載內容程式碼快速清理。"
+  },
+  "share": {
+    "label": "分享設定",
+    "group": "share",
+    "slug": "share",
+    "switch_slug": "share_switch",
+    "description": "實現文章打賞、點贊、微海報及常見社交分享選項。",
+    "share_items_api": [
+      {
+        "value": "qq",
+        "label": "QQ",
+        "format": "http://connect.qq.com/widget/shareqq/index.html?url=%s&title=%s&pics=%s&summary=%s"
+      },
+      {
+        "value": "weixin",
+        "label": "微信",
+        "format": "qrcode"
+      },
+      {
+        "value": "weibo",
+        "label": "微博",
+        "format": "https://service.weibo.com/share/share.php?url=%s&title=%s&pic=%s&searchPic=true"
+      },
+      {
+        "value": "line",
+        "label": "LINE",
+        "format": "https://social-plugins.line.me/lineit/share?url=%s"
+      },
+      {
+        "value": "facebook",
+        "label": "Facebook",
+        "format": "https://www.facebook.com/sharer/sharer.php?u=%s"
+      },
+      {
+        "value": "x",
+        "label": "X",
+        "format": "https://twitter.com/intent/tweet?url=%s&text=這篇文章很不錯%s"
+      },
+      {
+        "value": "whatsapp",
+        "label": "Whatsapp",
+        "format": "https://api.whatsapp.com/send/?text=這篇文章很不錯，推薦你看看%s&type=custom_url"
+      },
+      {
+        "value": "linkedin",
+        "label": "Linkedin",
+        "format": "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s"
+      },
+      {
+        "value": "pinterest",
+        "label": "Pinterest",
+        "format": "https://pinterest.com/pin/create/button/?url=%s&title=%s&media=%s&description=%s"
+      },
+      {
+        "value": "vk",
+        "label": "VK",
+        "format": "https://vk.com/share.php?url=%s&title=%s"
+      },
+      {
+        "value": "reddit",
+        "label": "Reddit",
+        "format": "https://www.reddit.com/submit?url=%s&title=%s"
+      },
+      {
+        "value": "email",
+        "label": "Email",
+        "format": "mailto:?body=這篇文章很不錯，推薦你看看：%s&subject=推薦閱讀"
+      }
+    ],
+    "fields": [
+      {
+        "label": "選擇元件",
+        "slug": "dwqr_module",
+        "custom": true,
+        "type": "checkbox",
+        "attrs": {
+          "items": [
+            {
+              "label": "打賞",
+              "slug": "donate",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "點贊",
+              "slug": "like",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "微海報",
+              "slug": "poster",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            },
+            {
+              "label": "分享",
+              "slug": "share",
+              "attrs": {
+                "true-value": "1",
+                "false-value": "0"
+              }
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "選擇需要顯示的元件。"
+        }
+      },
+      {
+        "label": "TabBar",
+        "slug": "tabbar_switch",
+        "pro": true,
+        "custom": true,
+        "type": "switch",
+        "attrs": {
+          "active-value": "1",
+          "inactive-value": "0",
+          "remark": {
+            "0": "已關閉",
+            "1": "已開啟"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "TabBar(標籤欄)僅適用移動端，僅在啟用了分享元件的文章詳情中出現。可因應主題特點選擇是否啟用。"
+        }
+      },
+      {
+        "label": "配色方案",
+        "slug": "theme_color",
+        "type": "color",
+        "attrs": {
+          "show-alpha": true,
+          "default": "#06c",
+          "predefine": [
+            "#0066CC",
+            "#A02533",
+            "#CA891E",
+            "#6BB020",
+            "#8B572A",
+            "#000000",
+            "#666666"
+          ]
+        }
+      },
+      {
+        "label": "展示位置",
+        "slug": "dwqr_module_position",
+        "type": "radio",
+        "attrs": {
+          "items": [
+            {
+              "label": "文章底部",
+              "value": "0"
+            },
+            {
+              "label": "文章左側懸浮",
+              "value": "1"
+            }
+          ]
+        },
+        "remark": {
+          "style": "block",
+          "content": "* 選擇在文章左側位置展示，可能會受主題的結構/樣式影響導致不可見或懸浮失效，外掛無法做到全部相容。故請根據實際效果選擇適合的展示位置。"
+        }
+      },
+      {
+        "label": "樣式預覽",
+        "slug": "preview",
+        "custom": true,
+        "type": "preview"
+      },
+      {
+        "label": "元件設定",
+        "slug": "item_setting",
+        "custom": true,
+        "type": "tab-pane",
+        "attrs": {
+          "items": [
+            {
+              "label": "打賞二維碼",
+              "slug": "donate",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "微信收款碼",
+                  "slug": "wechat_qrcode",
+                  "type": "img",
+                  "remark": "* 請上傳1:1尺寸規格的微信收款二維碼圖片，<a href='https://www.wbolt.com/how-to-get-wechat-and-alipay-qr-code.html' target='_blank'>如何獲取微信收款二維碼</a>？"
+                },
+                {
+                  "label": "支付寶收款碼",
+                  "slug": "alipay_qrcode",
+                  "type": "img",
+                  "remark": "* 請上傳1:1尺寸規格的支付寶收款二維碼圖片，<a href='https://www.wbolt.com/how-to-get-wechat-and-alipay-qr-code.html' target='_blank'>如何獲取支付寶收款二維碼</a>？"
+                }
+              ]
+            },
+            {
+              "label": "微海報",
+              "slug": "poster",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "站點logo",
+                  "slug": "logo_url",
+                  "type": "img",
+                  "remark": "* 請上傳站點的logo圖片，用於微海報生成。"
+                },
+                {
+                  "label": "海報預設圖",
+                  "slug": "cover_url",
+                  "type": "img",
+                  "remark": "* 當文章沒有特色圖及其他圖片時，會使用預設圖作為海報頭圖。建議選擇與如下設定的海報比例一致的圖片。"
+                },
+                {
+                  "label": "微海報樣式",
+                  "slug": "poster_theme",
+                  "type": "radio",
+                  "attrs": {
+                    "items": [
+                      {
+                        "label": "普通版",
+                        "value": "0"
+                      },
+                      {
+                        "label": "風格1",
+                        "value": "1"
+                      },
+                      {
+                        "label": "風格2",
+                        "value": "2"
+                      },
+                      {
+                        "label": "風格3",
+                        "value": "3"
+                      },
+                      {
+                        "label": "風格4",
+                        "value": "4"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "label": "分享設定",
+              "slug": "share",
+              "type": "tab-pane-item",
+              "fields": [
+                {
+                  "label": "文章分享渠道",
+                  "slug": "share_ways",
+                  "type": "checkbox",
+                  "custom": true,
+                  "attrs": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "dwqr_module": {
+        "donate": "1",
+        "like": "1",
+        "poster": "1",
+        "share": "1"
+      },
+      "tabbar_switch": 0,
+      "theme_color": "#0066CC",
+      "dwqr_module_position": "0",
+      "donate": {
+        "wechat_qrcode": "",
+        "alipay_qrcode": ""
+      },
+      "poster": {
+        "logo_url": "",
+        "cover_url": "",
+        "poster_theme": "0"
+      },
+      "share_ways": [
+        "qq",
+        "weixin",
+        "weibo"
+      ]
+    },
+    "disable": []
+  },
+  "move": {
+    "label": "搬家設定",
+    "group": "move",
+    "slug": "move",
+    "switch_slug": "move_switch",
+    "description": "快速實現文章按分類目錄或者標籤，實現文章遷移工作，以滿足當前內容運營需求。"
+  },
+  "schedule": {
+    "label": "定時設定",
+    "group": "schedule",
+    "slug": "schedule",
+    "switch_slug": "schedule_switch",
+    "description": "基於WordPress內建的定時釋出，實現可自定義規則的手動或者自動定時釋出任務編排。"
+  },
+  "enhance": {
+    "label": "編輯增強",
+    "group": "enhance",
+    "slug": "enhance",
+    "switch_slug": "enhance_switch",
+    "description": "通過釋出時間選項、克隆、自動Slug等實用功能，來提升內容釋出效率。",
+    "fields": [
+      {
+        "label": "釋出時間",
+        "slug": "publish_time",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已關閉",
+            "1": "已開啟"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "開啟後，在文章編輯頁面，會顯示一個釋出時間選項，方便站長快速設定文章釋出時間。"
+        }
+      },
+      {
+        "label": "克隆文章",
+        "slug": "clone_post",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已關閉",
+            "1": "已開啟"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "啟用後，在文章或者頁面列表快速選項增加克隆選項。以實現一鍵複製並建立新文章或頁面。"
+        }
+      },
+      {
+        "label": "自動Slug",
+        "slug": "auto_slug",
+        "type": "switch",
+        "attrs": {
+          "inactive-value": "0",
+          "active-value": "1",
+          "remark": {
+            "0": "已關閉",
+            "1": "已開啟"
+          }
+        },
+        "remark": {
+          "style": "block",
+          "content": "<p>溫馨提示：</p><ul><li>1. 自動Slug需將固定連結結構設定為名稱型，文章名或者自定義結構。</li><li>2. 自動Slug依賴文章翻譯API將別名翻譯為英文。</li><li>3. 特別字元去除，以縮短Slug長度。</li></ul>"
+        }
+      }
+    ],
+    "default": {
+      "publish_time": 0,
+      "clone_post": 0,
+      "auto_slug": 0
+    },
+    "disable": []
+  }
+}

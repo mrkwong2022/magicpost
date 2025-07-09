@@ -1,0 +1,33 @@
+{
+  "schedule-config": {
+    "content": "<dl><dd>定時釋出任務失敗可能是由於WordPress定時任務不生效導致，檢視<a href=\"https://www.wbolt.com/tw/wordpress-cron-job.html\" target=\"_blank\">WordPress定時任務建立和修改</a>以進一步排查問題。</dd><dd>不建議單日定時釋出文章超過100篇，一方面是網站的百度普通收錄推送配額每天只有100條；另一方面是過多定時任務可能會影響網站效能。</dd><dd>定時釋出文章時間區間應與網站訪客分佈時間相近，建議選擇9:00-22:00之間。</dd><dd>如果您的網站使用了Cloudflare，也可能導致定時任務失效，檢視<a href=\"https://www.wbolt.com/tw/fix-wp-cron-not-working-issue-with-cloudflare.html\" target=\"_blank\">具體的解決辦法</a>。</dd></dl>"
+  },
+  "move-cat": {
+    "content": [
+      "對文章的分類和標籤執行批量處理是不可逆操作，建議在執行文章搬家相關操作前進行<a href=\"https://www.wbolt.com/tw/14-best-wordpress-database-plugins.html\" target=\"_blank\">資料庫備份</a>。",
+      "寶塔面板使用者資料庫備份操作無需依賴外掛，直接通過寶塔控制面板即可<a href=\"https://www.wbolt.com/tw/bt-panel-database-management.html\" target=\"_blank\">完成資料庫備份操作</a>。",
+      "如文章搬家過程中，需要刪除或者修改分類和標籤，應該做好<a href=\"https://www.wbolt.com/tw/301-redirects-wordpress.html\" target=\"_blank\">301重定向</a>工作，也可以安裝<a href=\"https://www.wbolt.com/tw/plugins/bsl-pro\" target=\"_blank\">Smart SEO Tool</a>外掛實現。"
+    ]
+  },
+  "move-tag": {
+    "content": [
+      "對文章的分類和標籤執行批量處理是不可逆操作，建議在執行文章搬家相關操作前進行<a href=\"https://www.wbolt.com/tw/14-best-wordpress-database-plugins.html\" target=\"_blank\">資料庫備份</a>。",
+      "寶塔面板使用者資料庫備份操作無需依賴外掛，直接通過寶塔控制面板即可<a href=\"https://www.wbolt.com/tw/bt-panel-database-management.html\" target=\"_blank\">完成資料庫備份操作</a>。",
+      "如文章搬家過程中，需要刪除或者修改分類和標籤，應該做好<a href=\"https://www.wbolt.com/tw/301-redirects-wordpress.html\" target=\"_blank\">301重定向</a>工作，也可以安裝<a href=\"https://www.wbolt.com/tw/plugins/bsl-pro\" target=\"_blank\">Smart SEO Tool</a>外掛實現。"
+    ]
+  },
+  "translate": {
+    "content": [
+      "谷歌翻譯API（官方）和百度翻譯API均屬於付費服務，需要購買後才可以使用。",
+      "谷歌翻譯API（第三方）屬於免費服務，一般情況下，境外伺服器可以直接呼叫；境內伺服器可以選擇閃電博代理服務。",
+      "谷歌翻譯API（第三方）使用閃電博代理服務時，可能會存在不穩定的情況，如無法使用，請稍後再試。",
+      "百度翻譯API屬於<a href=\"https://ai.baidu.com/tech/mt/doc_trans\" target=\"_blank\" >文件翻譯</a>，屬於非即時資料返回。執行翻譯後，需等待幾分鐘返回結果，請勿反覆操作。"
+    ]
+  },
+  "clean": {
+    "content": "<dl><dd>如需使用到正規表示式執行搜尋替換，可以<a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions\" target=\"_blank\">深入學習正規表示式</a>。</dd><dd>無論是標籤、標籤屬性或者標籤及內容刪除，建議基於主題樣式定義進行規則配置，以做到事半功倍的效果。</dd></dl>"
+  },
+  "toc": {
+    "content": "<dl><dd>如需在文章側欄顯示內容目錄，需在外觀-小工具新增。建議將文章目錄放置側欄頂部。</dd><dd>不建議同時在正文和側欄設定內容目錄，根據主題實際情況選擇其中一種顯示位置即可。</dd><dd>當文章Heading標題過多和複雜時，應設定最大顯示條目數及選擇單一目錄結構（即僅H2或者H3）。</dd><dd>為了有利於SEO，文章正文內容標題應該按H2至H4層級設定，勿於正文設定H1標題。</dd></dl>"
+  }
+}

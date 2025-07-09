@@ -1,0 +1,33 @@
+{
+  "schedule-config": {
+    "content": "<dl><dd>定时发布任务失败可能是由于WordPress定时任务不生效导致，查看<a href=\"https://www.wbolt.com/wordpress-cron-job.html\" target=\"_blank\">WordPress定时任务创建和修改</a>以进一步排查问题。</dd><dd>不建议单日定时发布文章超过100篇，一方面是网站的百度普通收录推送配额每天只有100条；另一方面是过多定时任务可能会影响网站性能。</dd><dd>定时发布文章时间区间应与网站访客分布时间相近，建议选择9:00-22:00之间。</dd><dd>如果您的网站使用了Cloudflare，也可能导致定时任务失效，查看<a href=\"https://www.wbolt.com/fix-wp-cron-not-working-issue-with-cloudflare.html\" target=\"_blank\">具体的解决办法</a>。</dd></dl>"
+  },
+  "move-cat": {
+    "content": [
+      "对文章的分类和标签执行批量处理是不可逆操作，建议在执行文章搬家相关操作前进行<a href=\"https://www.wbolt.com/14-best-wordpress-database-plugins.html\" target=\"_blank\">数据库备份</a>。",
+      "宝塔面板用户数据库备份操作无需依赖插件，直接通过宝塔控制面板即可<a href=\"https://www.wbolt.com/bt-panel-database-management.html\" target=\"_blank\">完成数据库备份操作</a>。",
+      "如文章搬家过程中，需要删除或者修改分类和标签，应该做好<a href=\"https://www.wbolt.com/301-redirects-wordpress.html\" target=\"_blank\">301重定向</a>工作，也可以安装<a href=\"https://www.wbolt.com/plugins/bsl-pro\" target=\"_blank\">Smart SEO Tool</a>插件实现。"
+    ]
+  },
+  "move-tag": {
+    "content": [
+      "对文章的分类和标签执行批量处理是不可逆操作，建议在执行文章搬家相关操作前进行<a href=\"https://www.wbolt.com/14-best-wordpress-database-plugins.html\" target=\"_blank\">数据库备份</a>。",
+      "宝塔面板用户数据库备份操作无需依赖插件，直接通过宝塔控制面板即可<a href=\"https://www.wbolt.com/bt-panel-database-management.html\" target=\"_blank\">完成数据库备份操作</a>。",
+      "如文章搬家过程中，需要删除或者修改分类和标签，应该做好<a href=\"https://www.wbolt.com/301-redirects-wordpress.html\" target=\"_blank\">301重定向</a>工作，也可以安装<a href=\"https://www.wbolt.com/plugins/bsl-pro\" target=\"_blank\">Smart SEO Tool</a>插件实现。"
+    ]
+  },
+  "translate": {
+    "content": [
+      "谷歌翻译API（官方）和百度翻译API均属于付费服务，需要购买后才可以使用。",
+      "谷歌翻译API（第三方）属于免费服务，一般情况下，境外服务器可以直接调用；境内服务器可以选择闪电博代理服务。",
+      "谷歌翻译API（第三方）使用闪电博代理服务时，可能会存在不稳定的情况，如无法使用，请稍后再试。",
+      "百度翻译API属于<a href=\"https://ai.baidu.com/tech/mt/doc_trans\" target=\"_blank\" >文档翻译</a>，属于非即时数据返回。执行翻译后，需等待几分钟返回结果，请勿反复操作。"
+    ]
+  },
+  "clean": {
+    "content": "<dl><dd>如需使用到正则表达式执行搜索替换，可以<a href=\"https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions\" target=\"_blank\">深入学习正则表达式</a>。</dd><dd>无论是标签、标签属性或者标签及内容删除，建议基于主题样式定义进行规则配置，以做到事半功倍的效果。</dd></dl>"
+  },
+  "toc": {
+    "content": "<dl><dd>如需在文章侧栏显示内容目录，需在外观-小工具添加。建议将文章目录放置侧栏顶部。</dd><dd>不建议同时在正文和侧栏设置内容目录，根据主题实际情况选择其中一种显示位置即可。</dd><dd>当文章Heading标题过多和复杂时，应设置最大显示条目数及选择单一目录结构（即仅H2或者H3）。</dd><dd>为了有利于SEO，文章正文内容标题应该按H2至H4层级设置，勿于正文设置H1标题。</dd></dl>"
+  }
+}
